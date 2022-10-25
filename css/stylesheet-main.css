@@ -1,0 +1,21 @@
+.sidenav{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    background-color: rgb(3,8,45); /* Dark Blue*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
+    transition-timing-function: ease-in-out;
+    z-index:3;
+    border-right: 3px solid azure;
+    animation: fadeIn ease-in-out 0.8s;
+}
+
+.topnav {
+    background-color: #002082;
+    position:fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    border-bottom: 4px solid rgb(0, 0, 0);
+}
