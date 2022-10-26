@@ -1,128 +1,180 @@
-.sidenav{
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    background-color: rgb(3,8,45); /* Dark Blue*/
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
-    transition-timing-function: ease-in-out;
-    border-right: 3px solid azure;
-    animation: fadeIn ease-in-out 0.8s;
-    overflow-y: auto;
-    overflow-x: visible;
-    height: auto;
+.sidenav {
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  background-color: rgb(3, 8, 45); /* Dark Blue*/
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
+  transition-timing-function: ease-in-out;
+  border-right: 3px solid azure;
+  animation: fadeIn ease-in-out 0.8s;
+  overflow-y: auto;
+  overflow-x: visible;
+  height: auto;
 }
 /* The sidebar links */
 .sidenav a {
-    position: relative;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    height: 44px;
-    padding: 0 1.5rem;
-    font-size: 1.06rem;
-    white-space: nowrap;
-    font-weight: 700;
-  }
-  /* The button used to open the sidebar */
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 44px;
+  padding: 0 1.5rem;
+  font-size: 1.06rem;
+  white-space: nowrap;
+  font-weight: 700;
+}
+/* The button used to open the sidebar */
 
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #ffffff;
-    background-color: #ced8f770;
-  
-  }
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ffffff;
+  background-color: #ced8f770;
+}
 
 /* The button used to open the sidebar */
 .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #002082;
-    color: #ffffff;
-    padding: 16px 12px;
-    border: none;
-    top: 0; /* Position the navbar at the top of the page */
-  
-  }
+  font-size: 30px;
+  background-color: #002082;
+  color: #ffffff;
+  padding: 16px 12px;
+  border: none;
+  top: 0; /* Position the navbar at the top of the page */
+}
+.openbtn:hover {
+  cursor: pointer;
+}
+/* button to close the sidebar */
+.close_btn {
+  border-style: none;
+  background-color: transparent;
+  color: rgb(73, 226, 135, 0.8);
+}
+.close_btn:hover {
+  scale: 1.3;
+  cursor: pointer;
+}
+.close_btn:active {
+  color: rgb(73, 226, 135, 1);
+}
 .topnav {
-    background-color: #002082;
-    position:fixed;
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    border-bottom: 4px solid rgb(0, 0, 0);
+  background-color: #002082;
+  position: fixed;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border-bottom: 4px solid rgb(0, 0, 0);
 }
 /* List Style Main */
 li {
-    float: left;
+  float: left;
+}
+ul {
+  background-color: #ddddddfd;
+}
+a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #07010100;
+}
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+}
+.headerimg {
+  position: relative;
+  margin-left: 25%;
+}
+.walcon {
+  position: relative;
+  margin-left: 25%;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  ul {
-    background-color: #ddddddfd;
+  100% {
+    opacity: 1;
   }
-  a {
-    display: inline-block;
-    padding: 10px;
-    background-color: #07010100;
-  }
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 0px 16px;
-  
-  }
-  .headerimg{
-    position: relative;
-    margin-left: 25%;
-  }
-  .walcon{
-    position: relative;
-    margin-left: 25%;
-  }
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
+}
 
-    @-moz-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-webkit-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-o-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-ms-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
-          
-          @-moz-keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
-          
-          @-webkit-keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
-          
-          @-o-keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
-          
-          @-ms-keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
