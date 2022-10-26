@@ -42,6 +42,7 @@
 }
 .openbtn:hover {
   cursor: pointer;
+  color: rgb(73, 226, 135, 1);
 }
 /* button to close the sidebar */
 .close_btn {
