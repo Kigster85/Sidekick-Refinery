@@ -1,54 +1,86 @@
-.sidenav{
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    background-color: rgb(3,8,45); /* Dark Blue*/
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
-    transition-timing-function: ease-in-out;
-    border-right: 3px solid azure;
-    animation: fadeIn ease-in-out 0.8s;
-    overflow-y: auto;
-    overflow-x: visible;
-    height: auto;
+
+
+/* The start of the side naviagtion CSS */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  background-color: #03082D; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
+  transition-timing-function: ease-in-out;
+  animation: fadeIn ease 1s;
+  z-index: 4;
+  border-right: 3px solid #FFD039;
+  top: 0;
+  left: -255px;
+  
 }
-/* The sidebar links */
-.sidenav a {
-    position: relative;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    height: 44px;
-    padding: 0 1.5rem;
-    font-size: 1.06rem;
-    white-space: nowrap;
-    font-weight: 700;
-  }
+/* The side navigaion links */
+.sidenavbtn {
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #2EBC7F;
+  color: #03082D;
+  display: block;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  text-overflow: clip;
+  scroll-behavior: smooth;
+  border: 2px solid #03082D;
+  padding: 0% 0% 0% 5%;
+  border-radius: 10px;
+}
   /* The button used to open the sidebar */
 
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #ffffff;
-    background-color: #ced8f770;
-  
+  .sidenavbtn:hover {
+    color: #FFD039;
+    background-color: #1D2B72;
+    border: 2px solid #2EBC7F;
+    border-radius: 10px;
+
   }
 
 /* The button used to open the sidebar */
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #002082;
-    color: #ffffff;
-    padding: 16px 12px;
-    border: none;
-    top: 0; /* Position the navbar at the top of the page */
-  
-  }
+
+  /* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  margin-left: 70%;
+  margin-top: -40%;
+  width: 15%;
+  height: 5%;
+  background-image: url(./img/close.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid rgba(240, 255, 255, 0);
+}
+.sidenav .closebtn:hover {
+  position: absolute;
+  margin-left: 70%;
+  margin-top: -40%;
+  width: 15%;
+  height: 5%;
+  background-color: rgba(0, 12, 31, 0.582);
+  background-image: url(./img/close.png);
+  background-blend-mode: lighten;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top: 2px solid azure;
+  border-bottom: 2px solid azure;
+  border-left: 2px solid azure;
+  border-right: 2px solid azure;
+  background-position: center;
+}
 .topnav {
-    background-color: #002082;
-    position:fixed;
+    background-color: #03082D;
+    position:absolute;
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    border-bottom: 4px solid rgb(0, 0, 0);
+    border-bottom: 4px solid #FFD039;
 }
 /* List Style Main */
 li {
@@ -76,6 +108,14 @@ li {
   .walcon{
     position: relative;
     margin-left: 25%;
+  }
+
+  .mainbgimg{
+    background-color: rgba(40, 104, 51, 0.589);
+background-image: url(/img/bgimg/Logo_mark_black@3x.png);
+background-blend-mode: hard-light;
+background-repeat: no-repeat;
+background-size: 100%, 100%, cover;
   }
   @keyframes fadeIn {
     0% {opacity:0;}
