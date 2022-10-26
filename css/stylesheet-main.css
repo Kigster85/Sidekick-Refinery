@@ -1,4 +1,3 @@
-
 .sidenav {
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -24,7 +23,6 @@
   white-space: nowrap;
   font-weight: 700;
 }
-/* The button used to open the sidebar */
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -34,16 +32,15 @@
 
 /* The button used to open the sidebar */
 .openbtn {
-
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
-  background-color: #002082;
+  background-color: transparent;
   color: #ffffff;
   padding: 16px 12px;
   border: none;
   top: 0; /* Position the navbar at the top of the page */
 }
-
+/* Button to open the sidebar */
 .openbtn:hover {
   cursor: pointer;
   color: rgb(73, 226, 135, 1);
@@ -82,7 +79,6 @@
   color: rgb(255, 208, 57, 0.5);
   border: solid 2px rgb(255, 208, 57, 0.5);
 }
-
 
 .topnav {
   background-color: #002082;
@@ -207,54 +203,50 @@ li a {
   }
 }
 
-
-
 /* The start of the side naviagtion CSS */
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 250px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  background-color: #03082D; /* Black*/
+  background-color: #03082d; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
   transition-timing-function: ease-in-out;
   animation: fadeIn ease 1s;
   z-index: 4;
-  border-right: 3px solid #FFD039;
+  border-right: 3px solid #ffd039;
   top: 0;
   left: -255px;
-  
 }
 /* The side navigaion links */
 .sidenavbtn {
   text-decoration: none;
   font-size: 25px;
-  background-color: #2EBC7F;
-  color: #03082D;
+  background-color: #2ebc7f;
+  color: #03082d;
   display: block;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
   text-overflow: clip;
   scroll-behavior: smooth;
-  border: 2px solid #03082D;
+  border: 2px solid #03082d;
   padding: 0% 0% 0% 5%;
   border-radius: 10px;
 }
-  /* The button used to open the sidebar */
+/* The button used to open the sidebar */
 
-  /* When you mouse over the navigation links, change their color */
-  .sidenavbtn:hover {
-    color: #FFD039;
-    background-color: #1D2B72;
-    border: 2px solid #2EBC7F;
-    border-radius: 10px;
-
-  }
+/* When you mouse over the navigation links, change their color */
+.sidenavbtn:hover {
+  color: #ffd039;
+  background-color: #1d2b72;
+  border: 2px solid #2ebc7f;
+  border-radius: 10px;
+}
 
 /* The button used to open the sidebar */
 
-  /* Position and style the close button (top right corner) */
+/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
   margin-left: 70%;
@@ -285,94 +277,132 @@ li a {
   background-position: center;
 }
 .topnav {
-    background-color: #03082D;
-    position:absolute;
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    border-bottom: 4px solid #FFD039;
+  background-color: #03082d;
+  position: absolute;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border-bottom: 4px solid #ffd039;
 }
 /* List Style Main */
 li {
-    float: left;
-  }
-  ul {
-    background-color: #ddddddfd;
-  }
-  a {
-    display: inline-block;
-    padding: 10px;
-    background-color: #07010100;
-  }
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 0px 16px;
-  
-  }
-  .headerimg{
-    position: relative;
-    margin-left: 25%;
-  }
-  .walcon{
-    position: relative;
-    margin-left: 25%;
-  }
+  float: left;
+}
+ul {
+  background-color: #ddddddfd;
+}
+a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #07010100;
+}
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+}
+.headerimg {
+  position: relative;
+  margin-left: 25%;
+}
+.walcon {
+  position: relative;
+  margin-left: 25%;
+}
 
-  .mainbgimg{
-    background-color: rgba(40, 104, 51, 0.589);
-background-image: url(/img/bgimg/Logo_mark_black@3x.png);
-background-blend-mode: hard-light;
-background-repeat: no-repeat;
-background-size: 100%, 100%, cover;
+.mainbgimg {
+  background-color: rgba(40, 104, 51, 0.589);
+  background-image: url(/img/bgimg/Logo_mark_black@3x.png);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%, cover;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
+  100% {
+    opacity: 1;
+  }
+}
 
-    @-moz-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-webkit-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-o-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-ms-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
-          
-          @-moz-keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
-          
-          @-webkit-keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
-          
-          @-o-keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
-          
-          @-ms-keyframes fadeOut {
-          0% {opacity:1;}
-          100% {opacity:0;}
-          }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
