@@ -1,7 +1,7 @@
 /* Main Website Style Guide*/
-*{
- padding:0px;
- margin:0px; 
+* {
+  padding: 0px;
+  margin: 0px;
 }
 header,
 article,
@@ -18,7 +18,12 @@ body {
   height: 100%;
 }
 /*Font settings for entire Site*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #ffffff;
   max-width: 60ch;
   line-height: 1.1;
@@ -49,40 +54,38 @@ p {
   height: 100%; /* 100% Full-height */
   width: 250px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  background-color: #03082D; /* Black*/
+  background-color: #03082d; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
   transition-timing-function: ease-in-out;
   animation: fadeIn ease 1s;
   z-index: 4;
-  border-right: 3px solid #FFD039;
+  border-right: 3px solid #ffd039;
   top: 0;
   left: -255px;
-  
 }
 /* The side navigaion links */
 .sidenavbtn {
   text-decoration: none;
   font-size: 25px;
-  background-color: #2EBC7F;
-  color: #03082D;
+  background-color: #2ebc7f;
+  color: #03082d;
   display: block;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
   text-overflow: clip;
   scroll-behavior: smooth;
-  border: 2px solid #03082D;
+  border: 2px solid #03082d;
   padding: 0% 0% 0% 5%;
   border-radius: 10px;
 }
 /* When you mouse over the navigation links, change their color */
 .sidenavbtn:hover {
-  color: #FFD039;
-  background-color: #1D2B72;
-  border: 2px solid #2EBC7F;
+  color: #ffd039;
+  background-color: #1d2b72;
+  border: 2px solid #2ebc7f;
   border-radius: 10px;
-
 }
 /* The sidebar links */
 .sidenav a {
@@ -105,10 +108,9 @@ p {
 
 /* The button used to open the sidebar */
 .openbtn {
-
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
-  background-color: #03082D;
+  background-color: #03082d;
   color: #ffffff;
   padding: 16px 12px;
   border: none;
@@ -131,6 +133,7 @@ p {
   cursor: pointer;
 }
 .close_btn:active {
+  scale: 1.2;
   color: rgb(73, 226, 135, 1);
 }
 
@@ -145,21 +148,21 @@ p {
   font-weight: bold;
 }
 .connect_btn:hover {
-  background-color: rgb(29, 43, 114, 0.5);
+  background-color: rgb(29, 43, 114, 0.8);
   color: rgb(255, 208, 57, 1);
   border: solid 2px rgb(255, 208, 57, 1);
+  cursor: pointer;
 }
 .connect_btn:active {
-  background-color: rgb(29, 43, 114, 0.5);
+  background-color: rgb(29, 43, 114, 0.8);
   color: rgb(255, 208, 57, 0.5);
-  border: solid 2px rgb(255, 208, 57, 0.5);
+  border: solid 2px rgb(255, 208, 57, 0.8);
 }
 
-
 .topnav {
-  background-color: #03082D;
+  background-color: #03082d;
   width: 100%; /* Full width */
-  border-bottom: 4px solid #FFD039;
+  border-bottom: 4px solid #ffd039;
 }
 /* List Style Main */
 li {
@@ -188,7 +191,7 @@ li a {
   margin-left: 25%;
 }
 
-.bgimg{
+.bgimg {
   background-color: rgba(46, 188, 127, 1);
   background-image: url(../img/bgimg/Logo_mark_blue.svg);
   background-blend-mode: hard-light;
@@ -202,7 +205,7 @@ li a {
   opacity: 0.6;
   z-index: -1;
 }
-.bgimg_2{
+.bgimg_2 {
   background-color: rgba(3, 8, 45, 1);
   background-image: url(../img/bgimg/Logo_mark_blue.svg);
   background-blend-mode: hard-light;
@@ -217,11 +220,106 @@ li a {
   z-index: -1;
 }
 
-.mainbgimg{
+.mainbgimg {
   background-color: rgba(40, 104, 51, 0.589);
   background-image: url(/img/bgimg/Logo_mark_black@3x.png);
   background-blend-mode: hard-light;
   background-repeat: no-repeat;
   background-size: 100%, 100%, cover;
 }
-  
+
+.main_page {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.deposit_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-evenly;
+  background-color: rgb(29, 43, 114, 0.3);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.deposit_section:hover {
+  background-color: rgb(29, 43, 114, 0.4);
+}
+
+.deposit_input {
+  margin-left: 25%;
+  text-align: end;
+  padding: 5px;
+  border-radius: 25px;
+  border-style: none;
+  z-index: 2;
+  width: 125%;
+  font-size: larger;
+}
+
+.deposit_btn {
+  margin-left: 25%;
+  width: 50%;
+  padding: 15px;
+  text-align: end;
+  border-radius: 25px;
+  border: 5px solid #1d2b72;
+  background-color: rgb(73, 226, 135, 1);
+  font-size: large;
+  font-weight: bold;
+  color: #1d2b72;
+  z-index: 1;
+}
+.deposit_btn:hover {
+  cursor: pointer;
+  background-color: #1d2b72;
+  color: rgb(73, 226, 135, 0.8);
+}
+.deposit_btn:active {
+  opacity: 0.6;
+}
+
+.refuel_btn {
+  padding: 5px;
+  border-radius: 3px;
+  border-style: none;
+  margin: 10px;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(255, 208, 57, 0.8);
+  background-color: rgb(29, 43, 114, 0.8);
+}
+.refuel_btn:hover {
+  cursor: pointer;
+  color: rgb(29, 43, 114, 0.8);
+  background-color: rgb(255, 208, 57, 0.8);
+}
+
+.refuel_btn:active {
+  opacity: 0.6;
+}
+
+.claim_btn {
+  padding: 5px;
+  border-radius: 3px;
+  border-style: none;
+  margin: 10px;
+  font-size: large;
+  font-weight: bold;
+  color: #1d2b72;
+  background-color: rgb(255, 208, 57, 0.8);
+}
+
+.claim_btn:hover {
+  cursor: pointer;
+  color: rgb(255, 208, 57, 0.8);
+  background-color: #1d2b72;
+}
+
+.claim_btn:active {
+  opacity: 0.6;
+}

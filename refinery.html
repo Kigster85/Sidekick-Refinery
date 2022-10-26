@@ -13,35 +13,41 @@
       media="only screen and (max-width: 1139px)"
     />
     <script src="js/sidenavfunc.js"></script>
-
   </head>
-<body >
-      <main class="bgimg">
-      </main>
-  <header class="topnav">
-    <button class="openbtn" onclick="openNav()">&#9776;</button>
-      <img class="headerimg" src="img/Logo files/PNG Small/Logo_horizontal_color for blue BG.png"/>
+  <body>
+    <main class="bgimg"></main>
+    <header class="topnav">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <img
+        class="headerimg"
+        src="img/Logo files/PNG Small/Logo_horizontal_color for blue BG.png"
+      />
       <button class="connect_btn">Connect to Wallet</button>
-  </header>
-  <!--Left Side Navigation Start-->
-  
-    <nav id="mySidebar" class="sidenav">
-        <button class="close_btn" onclick="closeNav()">close</button>
-            <ul>
-                <!--Left side Collapsable Menu-->
-                <li>
-                    <button class="sidenavbtn"> test test test test</button>
-                </li>
-            </ul>
-    </nav>
-        <!--Left Side Navigation End-->
-       <main>
-        <section>
-          <button>test</button>
-          <button>test2</button>
-        </section>
-       </main>
-    
+    </header>
+    <!--Left Side Navigation Start-->
 
+    <nav id="mySidebar" class="sidenav">
+      <button class="close_btn" onclick="closeNav()">close</button>
+      <ul>
+        <!--Left side Collapsable Menu-->
+        <li>
+          <button class="sidenavbtn">test test test test</button>
+        </li>
+      </ul>
+    </nav>
+    <!--Left Side Navigation End-->
+
+    <!--Main page content start-->
+    <main class="main_page">
+      <!--Deposit start-->
+      <section class="deposit_section">
+        <input class="deposit_input" type="text" />
+        <button class="deposit_btn">Deposit</button>
+        <button class="refuel_btn">Refuel</button>
+        <button class="claim_btn">Claim</button>
+      </section>
+      <!--Deposit end-->
+    </main>
+    <!--Main page content end-->
   </body>
 </html>
