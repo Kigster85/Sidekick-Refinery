@@ -1,15 +1,88 @@
+/* Main Website Style Guide*/
+*{
+ padding:0px;
+ margin:0px; 
+}
+header,
+article,
+footer,
+nav {
+  display: block;
+  max-width: 100%;
+}
+body {
+  background-color: #000c1f;
+  line-height: 1;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+/*Font settings for entire Site*/
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  max-width: 60ch;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 2vw;
+}
+h2 {
+  font-size: 1.75vw;
+}
+h3 {
+  font-size: 1.2vw;
+}
+h4 {
+  font-size: 1vw;
+}
+h5 {
+  font-size: 1vw;
+}
+p {
+  font-size: 1.05vw;
+  color: rgb(255, 255, 255);
+  max-width: 60ch;
+}
+
+/* The start of the side naviagtion CSS */
 .sidenav {
-  width: 0; /* 0 width - change this with JavaScript */
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  background-color: rgb(3, 8, 45); /* Dark Blue*/
+  background-color: #03082D; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
   transition-timing-function: ease-in-out;
-  border-right: 3px solid azure;
-  animation: fadeIn ease-in-out 0.8s;
-  overflow-y: auto;
-  overflow-x: visible;
-  height: auto;
+  animation: fadeIn ease 1s;
+  z-index: 4;
+  border-right: 3px solid #FFD039;
+  top: 0;
+  left: -255px;
+  
+}
+/* The side navigaion links */
+.sidenavbtn {
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #2EBC7F;
+  color: #03082D;
+  display: block;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  text-overflow: clip;
+  scroll-behavior: smooth;
+  border: 2px solid #03082D;
+  padding: 0% 0% 0% 5%;
+  border-radius: 10px;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenavbtn:hover {
+  color: #FFD039;
+  background-color: #1D2B72;
+  border: 2px solid #2EBC7F;
+  border-radius: 10px;
+
 }
 /* The sidebar links */
 .sidenav a {
@@ -32,19 +105,21 @@
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 30px;
+
+  font-size: 20px;
   cursor: pointer;
-  background-color: transparent;
+  background-color: #03082D;
   color: #ffffff;
   padding: 16px 12px;
   border: none;
   top: 0; /* Position the navbar at the top of the page */
 }
-/* Button to open the sidebar */
+
 .openbtn:hover {
   cursor: pointer;
   color: rgb(73, 226, 135, 1);
 }
+
 /* button to close the sidebar */
 .close_btn {
   border-style: none;
@@ -80,208 +155,11 @@
   border: solid 2px rgb(255, 208, 57, 0.5);
 }
 
+
 .topnav {
-  background-color: #002082;
-  position: fixed;
-  top: 0; /* Position the navbar at the top of the page */
+  background-color: #03082D;
   width: 100%; /* Full width */
-  border-bottom: 4px solid rgb(0, 0, 0);
-}
-/* List Style Main */
-li {
-  float: left;
-}
-ul {
-  background-color: #ddddddfd;
-}
-a {
-  display: inline-block;
-  padding: 10px;
-  background-color: #07010100;
-}
-li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 0px 16px;
-}
-.headerimg {
-  position: relative;
-  margin-left: 25%;
-}
-.walcon {
-  position: relative;
-  margin-left: 25%;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-ms-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/* The start of the side naviagtion CSS */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 250px; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  background-color: #03082d; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
-  transition-timing-function: ease-in-out;
-  animation: fadeIn ease 1s;
-  z-index: 4;
-  border-right: 3px solid #ffd039;
-  top: 0;
-  left: -255px;
-}
-/* The side navigaion links */
-.sidenavbtn {
-  text-decoration: none;
-  font-size: 25px;
-  background-color: #2ebc7f;
-  color: #03082d;
-  display: block;
-  transition: 0.3s;
-  transition-timing-function: ease-in-out;
-  text-overflow: clip;
-  scroll-behavior: smooth;
-  border: 2px solid #03082d;
-  padding: 0% 0% 0% 5%;
-  border-radius: 10px;
-}
-/* The button used to open the sidebar */
-
-/* When you mouse over the navigation links, change their color */
-.sidenavbtn:hover {
-  color: #ffd039;
-  background-color: #1d2b72;
-  border: 2px solid #2ebc7f;
-  border-radius: 10px;
-}
-
-/* The button used to open the sidebar */
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  margin-left: 70%;
-  margin-top: -40%;
-  width: 15%;
-  height: 5%;
-  background-image: url(./img/close.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid rgba(240, 255, 255, 0);
-}
-.sidenav .closebtn:hover {
-  position: absolute;
-  margin-left: 70%;
-  margin-top: -40%;
-  width: 15%;
-  height: 5%;
-  background-color: rgba(0, 12, 31, 0.582);
-  background-image: url(./img/close.png);
-  background-blend-mode: lighten;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-top: 2px solid azure;
-  border-bottom: 2px solid azure;
-  border-left: 2px solid azure;
-  border-right: 2px solid azure;
-  background-position: center;
-}
-.topnav {
-  background-color: #03082d;
-  position: absolute;
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  border-bottom: 4px solid #ffd039;
+  border-bottom: 4px solid #FFD039;
 }
 /* List Style Main */
 li {
@@ -310,99 +188,40 @@ li a {
   margin-left: 25%;
 }
 
-.mainbgimg {
+.bgimg{
+  background-color: rgba(46, 188, 127, 1);
+  background-image: url(../img/bgimg/Logo_mark_blue.svg);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: 70%, 100%, cover;
+  filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  position: absolute;
+  opacity: 0.6;
+  z-index: -1;
+}
+.bgimg_2{
+  background-color: rgba(3, 8, 45, 1);
+  background-image: url(../img/bgimg/Logo_mark_blue.svg);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: 70%, 100%, cover;
+  filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  background-position: bottom;
+  position: absolute;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.mainbgimg{
   background-color: rgba(40, 104, 51, 0.589);
   background-image: url(/img/bgimg/Logo_mark_black@3x.png);
   background-blend-mode: hard-light;
   background-repeat: no-repeat;
   background-size: 100%, 100%, cover;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-ms-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+  
