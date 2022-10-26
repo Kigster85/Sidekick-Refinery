@@ -119,37 +119,7 @@ p {
   cursor: pointer;
   color: rgb(73, 226, 135, 1);
 }
-/* button to close the sidebar */
- /* Position and style the close button (top right corner) */
- /*.sidenav .closebtn {
-  position: absolute;
-  margin-left: 70%;
-  margin-top: -40%;
-  width: 15%;
-  height: 5%;
-  background-image: url(./img/close.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid rgba(240, 255, 255, 0);
-}
-.sidenav .closebtn:hover {
-  position: absolute;
-  margin-left: 70%;
-  margin-top: -40%;
-  width: 15%;
-  height: 5%;
-  background-color: rgba(0, 12, 31, 0.582);
-  background-image: url(./img/close.png);
-  background-blend-mode: lighten;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-top: 2px solid azure;
-  border-bottom: 2px solid azure;
-  border-left: 2px solid azure;
-  border-right: 2px solid azure;
-  background-position: center;
-}*/
+
 /* button to close the sidebar */
 .close_btn {
   border-style: none;
