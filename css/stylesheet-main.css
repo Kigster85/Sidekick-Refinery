@@ -237,9 +237,10 @@ li a {
 .description_section {
   background-color: rgb(29, 43, 114, 0.3);
   padding: 30px;
-  margin: 10%;
+  margin: 50px 30px 50px 50px;
   border-radius: 3px;
   width: 500px;
+  justify-self: center;
 }
 .description_section:hover {
   background-color: rgb(29, 43, 114, 0.4);
@@ -250,6 +251,7 @@ li a {
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: space-evenly;
   align-content: space-evenly;
+  margin-bottom: 20px;
 }
 .description__p {
   margin-top: 10px;
@@ -264,6 +266,16 @@ li a {
   margin-top: 20px;
   border-radius: 3px;
 }
+.contract_addresses-container {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.contract_address {
+  text-align: center;
+  background-color: rgb(3, 8, 45, 0.3);
+  margin-bottom: 10px;
+}
 /* description section end*/
 
 /* deposit section start*/
@@ -274,12 +286,13 @@ li a {
   justify-content: space-evenly;
   background-color: rgb(29, 43, 114, 0.3);
   padding: 30px;
-  margin: 10%;
+  margin: 50px 30px 50px 50px;
   border-radius: 3px;
   width: 500px;
   text-align: center;
   grid-column: 2;
   height: 200px;
+  justify-self: center;
 }
 
 .deposit_section:hover {
@@ -311,7 +324,7 @@ li a {
   z-index: 1;
 }
 
-.deposit_btn {
+.max_btn {
   height: 50px;
   width: 125px;
   text-align: center;
@@ -332,12 +345,34 @@ li a {
   justify-self: center;
   z-index: 2;
 }
-.deposit_btn:hover {
+.max_btn:hover {
   cursor: pointer;
   background-color: #1d2b72;
   color: rgb(73, 226, 135, 0.8);
 }
-.deposit_btn:active {
+.max_btn:active {
+  opacity: 0.6;
+}
+
+.approve_btn {
+  padding: 10px 24px;
+  border-radius: 3px;
+  border-style: none;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1d2b72;
+  background-color: rgb(255, 208, 57, 0.8);
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: center;
+}
+.approve_btn:hover {
+  cursor: pointer;
+  color: rgb(255, 208, 57, 0.8);
+  background-color: #1d2b72;
+}
+.approve_btn:active {
   opacity: 0.6;
 }
 
@@ -350,9 +385,9 @@ li a {
   font-weight: bold;
   color: #1d2b72;
   background-color: rgb(255, 208, 57, 0.8);
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 3;
-  justify-self: end;
+  justify-self: center;
 }
 .refuel_btn:hover {
   cursor: pointer;
@@ -375,7 +410,7 @@ li a {
   background-color: rgb(255, 208, 57, 0.8);
   grid-column: 3;
   grid-row: 3;
-  justify-self: start;
+  justify-self: center;
 }
 
 .claim_btn:hover {
