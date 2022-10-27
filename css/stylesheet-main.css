@@ -240,7 +240,7 @@ li a {
   margin: 50px 30px 50px 50px;
   border-radius: 3px;
   width: 500px;
-  justify-self: center;
+  justify-self: end;
 }
 .description_section:hover {
   background-color: rgb(29, 43, 114, 0.4);
@@ -292,7 +292,7 @@ li a {
   text-align: center;
   grid-column: 2;
   height: 200px;
-  justify-self: center;
+  justify-self: start;
 }
 
 .deposit_section:hover {
