@@ -41,12 +41,6 @@
     <main class="main_page">
       <!-- Description & stats start-->
       <section class="description_section">
-        <p class="description__p">
-          The Refinery is an open-ended blockchain CD that allows you to deposit
-          and compound HFUEL tokens daily. By holding xHNW and xSK , you can
-          increase your daily payout percentage and the total rewards you can
-          earn, while also earning from transaction fees of both HNW and SK.
-        </p>
         <div class="description_section--stats">
           <div class="stat">
             <h3>Available</h3>
@@ -73,6 +67,12 @@
             <h3>xHNW Balance</h3>
           </div>
         </div>
+        <p class="description__p">
+          The Refinery is an open-ended blockchain CD that allows you to deposit
+          and compound HFUEL tokens daily. By holding xHNW and xSK , you can
+          increase your daily payout percentage and the total rewards you can
+          earn, while also earning from transaction fees of both HNW and SK.
+        </p>
         <div class="contract_addresses-container">
           <p class="contract_address">
             HFUEL Contract Address: 0x157Ba4bBbb2bd7D59024143C2C9E08f6060717a6
@@ -91,7 +91,8 @@
       <!--Deposit start-->
       <section class="deposit_section">
         <h2 class="deposit_h2">DEPOSIT</h2>
-
+        <p class="deposit_amount-p">Amount</p>
+        <p class="deposit_balance-p">Hfuel Balance:</p>
         <input class="deposit_input" type="text" placeholder="HFUEL" />
         <button class="max_btn">MAX</button>
         <button class="approve_btn">Approve</button>
@@ -99,6 +100,19 @@
         <button class="claim_btn">Claim</button>
       </section>
       <!--Deposit end-->
+      <!--Wingman section start-->
+      <section class="wingman_section">
+        <h2 class="wingman_section-h2">GET A WINGMAN</h2>
+        <div class="wingman_section-lookup">
+          <h3>Wingman Lookup</h3>
+          <input
+            class="wingman_section-input"
+            type="text"
+            placeholder="Wingman Address"
+          />
+        </div>
+      </section>
+      <!--Wingman section end-->
     </main>
     <!--Main page content end-->
   </body>
