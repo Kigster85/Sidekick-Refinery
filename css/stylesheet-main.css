@@ -306,7 +306,7 @@ li a {
 .deposit_input {
   text-align: end;
   padding-right: 40px;
-  border-top-right-radius: 3px;
+  border-top-right-radius: 25px;
   border-top-left-radius: 3px;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 25px;
@@ -328,12 +328,12 @@ li a {
   height: 50px;
   width: 125px;
   text-align: center;
-  border-radius: 25px;
   border-bottom: 5px solid #1d2b72;
   border-left: 5px solid #1d2b72;
   border-top: 5px solid #1d2b72;
   border-right: 3px solid #1d2b72;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
   border-bottom-right-radius: 3px;
   background-color: rgb(73, 226, 135, 1);
   font-weight: bold;
