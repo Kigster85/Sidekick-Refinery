@@ -124,6 +124,7 @@ p {
 
 /* button to close the sidebar */
 .close_btn {
+  margin-left: 80%;
   border-style: none;
   background-color: transparent;
   color: rgb(73, 226, 135, 0.8);
@@ -140,23 +141,20 @@ p {
 /* Connect to wallet button */
 .connect_btn {
   border-style: none;
-  background-color: rgb(255, 208, 57, 1);
+  background-color: rgb(255, 208, 57, 0.7);
   font-size: 15px;
-  color: rgb(29, 43, 114, 1);
+  color: rgb(29, 43, 114, 0.7);
   border-radius: 25px;
   padding: 5px 10px 5px 10px;
   font-weight: bold;
 }
 .connect_btn:hover {
-  background-color: rgb(29, 43, 114, 0.8);
-  color: rgb(255, 208, 57, 1);
-  border: solid 2px rgb(255, 208, 57, 1);
+  background-color: rgb(255, 208, 57, 1);
+  color: rgb(29, 43, 114, 1);
   cursor: pointer;
 }
 .connect_btn:active {
-  background-color: rgb(29, 43, 114, 0.8);
-  color: rgb(255, 208, 57, 0.5);
-  border: solid 2px rgb(255, 208, 57, 0.8);
+  opacity: 0.6;
 }
 
 .topnav {
@@ -228,13 +226,14 @@ li a {
   background-size: 100%, 100%, cover;
 }
 
+/* main content */
 .main_page {
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
+/* deposit section */
 .deposit_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -244,6 +243,7 @@ li a {
   padding: 30px;
   margin: 10px;
   border-radius: 3px;
+  width: 500px;
 }
 
 .deposit_section:hover {
@@ -253,17 +253,22 @@ li a {
 .deposit_input {
   margin-left: 25%;
   text-align: end;
-  padding: 5px;
+  padding-right: 10px;
   border-radius: 25px;
-  border-style: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom: 5px solid #1d2b72;
+  border-left: 5px solid #1d2b72;
+  border-top: 5px solid #1d2b72;
+  border-right-style: none;
   z-index: 2;
-  width: 125%;
-  font-size: larger;
+  width: 110%;
+  font-size: 25px;
 }
 
 .deposit_btn {
   margin-left: 25%;
-  width: 50%;
+  width: 55%;
   padding: 15px;
   text-align: end;
   border-radius: 25px;
