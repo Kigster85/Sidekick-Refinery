@@ -267,8 +267,8 @@ li a {
 }
 
 .deposit_btn {
-  margin-left: 25%;
-  width: 55%;
+  margin-left: 30%;
+  width: 50%;
   padding: 15px;
   text-align: end;
   border-radius: 25px;
@@ -289,7 +289,7 @@ li a {
 }
 
 .refuel_btn {
-  padding: 5px;
+  padding: 10px 24px;
   border-radius: 3px;
   border-style: none;
   margin: 10px;
@@ -309,7 +309,7 @@ li a {
 }
 
 .claim_btn {
-  padding: 5px;
+  padding: 10px 24px;
   border-radius: 3px;
   border-style: none;
   margin: 10px;
