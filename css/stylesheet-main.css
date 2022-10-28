@@ -242,6 +242,7 @@ li a {
   margin: 50px 50px 50px 30px;
   border-radius: 3px;
   width: 500px;
+  height: 1050px;
   grid-row: 1 / 4;
   justify-self: end;
 }
@@ -449,7 +450,7 @@ li a {
   border-radius: 3px;
   width: 500px;
   text-align: center;
-  height: 400px;
+  height: 460px;
   justify-self: start;
 }
 
@@ -481,7 +482,6 @@ li a {
 }
 .wingman_section-lookup {
   text-align: center;
-  border: 2px solid rgb(3, 8, 45, 0.3);
   justify-self: center;
   padding: 15px 15px 15px 15px;
   margin-top: 20px;
@@ -540,6 +540,100 @@ li a {
 .wingman_section-supportBtn:active {
   opacity: 0.8;
 }
-
 /* wingman section end*/
+
+/*Checkout Refiners section start*/
+.checkoutRefiners_section {
+  grid-row: 3;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 4fr;
+  justify-content: space-evenly;
+  background-color: rgb(29, 43, 114, 0.3);
+  padding: 30px;
+  margin: 50px 30px 50px 50px;
+  border-radius: 3px;
+  width: 500px;
+  text-align: center;
+  height: 460px;
+  justify-self: start;
+}
+.checkoutRefiners_section:hover {
+  background-color: rgb(29, 43, 114, 0.4);
+}
+.checkoutRefiners_section-h2 {
+  grid-column: 1/3;
+  justify-self: start;
+}
+.checkoutRefiners_section-playerLookup {
+  grid-row: 2;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+.checkoutRefiners_section-playerLookupH3 {
+  grid-column: 1/3;
+}
+.checkoutRefiners_section-input {
+  text-align: end;
+  padding-right: 40px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 25px;
+  border-bottom: 5px solid #1d2b72;
+  border-left: 5px solid #1d2b72;
+  border-top: 5px solid #1d2b72;
+  border-right: 3px solid #1d2b72;
+  font-size: 20px;
+  background-color: white;
+  grid-column: 1 / 4;
+  grid-row: 2;
+  height: 40px;
+  width: 325px;
+  justify-self: start;
+  z-index: 1;
+}
+.checkoutRefiners_section-searchBtn {
+  height: 50px;
+  width: 125px;
+  text-align: center;
+  border-bottom: 5px solid #1d2b72;
+  border-left: 5px solid #1d2b72;
+  border-top: 5px solid #1d2b72;
+  border-right: 3px solid #1d2b72;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 3px;
+  background-color: rgb(73, 226, 135, 1);
+  font-weight: bold;
+  font-size: 17px;
+  color: #1d2b72;
+  grid-row: 2;
+  grid-column: 2/3;
+  justify-self: end;
+  z-index: 2;
+  margin-right: 20px;
+}
+.checkoutRefiners_section-searchBtn:hover {
+  cursor: pointer;
+  background-color: #1d2b72;
+  color: rgb(73, 226, 135, 1);
+}
+.checkoutRefiners_section-searchBtn:active {
+  scale: 0.95;
+  color: rgb(73, 226, 135, 0.8);
+}
+
+.checkoutRefiners_section-playerInfo {
+  grid-row: 3;
+  grid-column: 1/3;
+  background-color: rgb(3, 8, 45, 0.3);
+  border-radius: 3px;
+  margin: 20px 50px 20px 50px;
+  padding: 15px;
+}
+/*Checkout Refiners section end*/
 /*Main content end*/
