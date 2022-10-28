@@ -242,6 +242,7 @@ li a {
   margin: 50px 50px 50px 30px;
   border-radius: 3px;
   width: 500px;
+  height: 1050px;
   grid-row: 1 / 4;
   justify-self: end;
 }
@@ -540,6 +541,11 @@ li a {
 .wingman_section-supportBtn:active {
   opacity: 0.8;
 }
-
 /* wingman section end*/
+/*Checkout Refiners section start*/
+.checkoutRefiners_section {
+  grid-row: 3;
+  grid-column: 2;
+}
+/*Checkout Refiners section end*/
 /*Main content end*/
