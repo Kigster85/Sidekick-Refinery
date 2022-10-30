@@ -78,10 +78,11 @@ p {
 }
 /* When you mouse over the navigation links, change their color */
 .sidenavbtn:hover {
-  color: #FFD039;
-  background-color: #1D2B72;
-  border: 2px solid #2EBC7F;
+  color: #03082D;
+  background-color: #49E287;
+  border: 2px solid #FFD039;
   border-radius: 10px;
+  cursor: pointer;
 
 }
 /* The sidebar links */
@@ -100,56 +101,25 @@ p {
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #ffffff;
+  cursor: pointer;
   background-color: #ced8f770;
 }
 
 /* The button used to open the sidebar */
 .openbtn {
-
-  font-size: 20px;
+  font-size: 32px;
   cursor: pointer;
   background-color: #03082D;
   color: #ffffff;
-  padding: 16px 12px;
   border: none;
-  top: 0; /* Position the navbar at the top of the page */
+  margin-top: 2vh;
 }
 
 .openbtn:hover {
   cursor: pointer;
   color: rgb(73, 226, 135, 1);
 }
-/* button to close the sidebar */
- /* Position and style the close button (top right corner) */
- /*.sidenav .closebtn {
-  position: absolute;
-  margin-left: 70%;
-  margin-top: -40%;
-  width: 15%;
-  height: 5%;
-  background-image: url(./img/close.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid rgba(240, 255, 255, 0);
-}
-.sidenav .closebtn:hover {
-  position: absolute;
-  margin-left: 70%;
-  margin-top: -40%;
-  width: 15%;
-  height: 5%;
-  background-color: rgba(0, 12, 31, 0.582);
-  background-image: url(./img/close.png);
-  background-blend-mode: lighten;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-top: 2px solid azure;
-  border-bottom: 2px solid azure;
-  border-left: 2px solid azure;
-  border-right: 2px solid azure;
-  background-position: center;
-}*/
+
 /* button to close the sidebar */
 .close_btn {
   border-style: none;
@@ -173,11 +143,18 @@ p {
   border-radius: 25px;
   padding: 5px 10px 5px 10px;
   font-weight: bold;
+  max-width: 166px;
+  height: 26px;
+  margin-right: 2vw;
+  margin-top: 3vh;
+  
 }
 .connect_btn:hover {
   background-color: rgb(29, 43, 114, 0.5);
   color: rgb(255, 208, 57, 1);
   border: solid 2px rgb(255, 208, 57, 1);
+  padding: 2px 10px 5px 10px;
+  cursor: pointer;
 }
 .connect_btn:active {
   background-color: rgb(29, 43, 114, 0.5);
@@ -188,9 +165,30 @@ p {
 
 .topnav {
   background-color: #03082D;
-  width: 100%; /* Full width */
+  width: 100%; 
   border-bottom: 4px solid #FFD039;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: auto;
 }
+.topnav > div{
+  width: 33.33%;
+    
+}
+.tnavflexl{
+  text-align: left;
+  margin-left: 1vw;
+}
+.tnavflexm{
+  text-align: center;
+  
+}
+.tnavflexr{
+  text-align: right;
+  margin-right: -1vw;
+}
+
 /* List Style Main */
 li {
   float: left;
@@ -210,8 +208,9 @@ li a {
   padding: 0px 16px;
 }
 .headerimg {
-  position: relative;
-  margin-left: 25%;
+  max-height: 9vh;
+  max-width: 20vw;
+  text-align: center;
 }
 .walcon {
   position: relative;
