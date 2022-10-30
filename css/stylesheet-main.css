@@ -1,7 +1,7 @@
 /* Main Website Style Guide*/
-* {
-  padding: 0px;
-  margin: 0px;
+*{
+ padding:0px;
+ margin:0px; 
 }
 header,
 article,
@@ -16,14 +16,10 @@ body {
   padding: 0px;
   margin: 0px;
   height: 100%;
+  
 }
 /*Font settings for entire Site*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   max-width: 60ch;
   line-height: 1.1;
@@ -54,29 +50,30 @@ p {
   height: 100%; /* 100% Full-height */
   width: 250px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  background-color: #03082d; /* Black*/
+  background-color: #03082D; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
   transition-timing-function: ease-in-out;
   animation: fadeIn ease 1s;
   z-index: 4;
-  border-right: 3px solid #ffd039;
+  border-right: 3px solid #FFD039;
   top: 0;
   left: -255px;
+  
 }
 /* The side navigaion links */
 .sidenavbtn {
   text-decoration: none;
   font-size: 25px;
-  background-color: #2ebc7f;
-  color: #03082d;
+  background-color: #2EBC7F;
+  color: #03082D;
   display: block;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
   text-overflow: clip;
   scroll-behavior: smooth;
-  border: 2px solid #03082d;
+  border: 2px solid #03082D;
   padding: 0% 0% 0% 5%;
   border-radius: 10px;
 }
@@ -87,6 +84,7 @@ p {
   border: 2px solid #FFD039;
   border-radius: 10px;
   cursor: pointer;
+
 }
 /* The sidebar links */
 .sidenav a {
@@ -112,7 +110,7 @@ p {
 .openbtn {
   font-size: 32px;
   cursor: pointer;
-  background-color: #03082d;
+  background-color: #03082D;
   color: #ffffff;
   border: none;
   margin-top: 2vh;
@@ -125,7 +123,6 @@ p {
 
 /* button to close the sidebar */
 .close_btn {
-  margin-left: 80%;
   border-style: none;
   background-color: transparent;
   color: rgb(73, 226, 135, 0.8);
@@ -135,36 +132,36 @@ p {
   cursor: pointer;
 }
 .close_btn:active {
-  scale: 1.2;
   color: rgb(73, 226, 135, 1);
 }
 
 /* Connect to wallet button */
 .connect_btn {
   border-style: none;
-  background-color: rgb(255, 208, 57, 0.8);
+  background-color: rgb(255, 208, 57, 1);
   font-size: 15px;
-  color: rgb(29, 43, 114, 0.8);
+  color: rgb(29, 43, 114, 1);
   border-radius: 25px;
   padding: 5px 10px 5px 10px;
   font-weight: bold;
   max-width: 166px;
-  height: 26px;
   margin-right: 2vw;
   margin-top: 3vh;
-  
+  word-wrap: break-word;
 }
 .connect_btn:hover {
   background-color: rgb(29, 43, 114, 0.5);
   color: rgb(255, 208, 57, 1);
   border: solid 2px rgb(255, 208, 57, 1);
   padding: 2px 10px 5px 10px;
-
   cursor: pointer;
 }
 .connect_btn:active {
-  opacity: 0.6;
+  background-color: rgb(29, 43, 114, 0.5);
+  color: rgb(255, 208, 57, 0.5);
+  border: solid 2px rgb(255, 208, 57, 0.5);
 }
+
 
 .topnav {
   background-color: #03082D;
@@ -172,8 +169,10 @@ p {
   border-bottom: 4px solid #FFD039;
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
   margin: auto;
+  height: 9vh;
+  position: fixed;
+  z-index: 10;
 }
 .topnav > div{
   width: 33.33%;
@@ -191,7 +190,6 @@ p {
   text-align: right;
   margin-right: -1vw;
 }
-
 
 /* List Style Main */
 li {
@@ -221,9 +219,9 @@ li a {
   margin-left: 25%;
 }
 
-.bgimg {
+.bgimg{
   background-color: rgba(46, 188, 127, 1);
-  background-image: url(../img/bgimg/Logo_mark_blue.svg);
+  background-image: url(../img/bgimg/Logo_mark_blue@3x.png);
   background-blend-mode: hard-light;
   background-repeat: no-repeat;
   background-size: 70%, 100%, cover;
@@ -231,11 +229,11 @@ li a {
   width: 100%;
   height: 100%;
   background-position: center;
-  position: absolute;
+  position: fixed;
   opacity: 0.6;
   z-index: -1;
 }
-.bgimg_2 {
+.bgimg_2{
   background-color: rgba(3, 8, 45, 1);
   background-image: url(../img/bgimg/Logo_mark_blue.svg);
   background-blend-mode: hard-light;
@@ -250,20 +248,21 @@ li a {
   z-index: -1;
 }
 
-.mainbgimg {
+.mainbgimg{
   background-color: rgba(40, 104, 51, 0.589);
   background-image: url(/img/bgimg/Logo_mark_black@3x.png);
   background-blend-mode: hard-light;
   background-repeat: no-repeat;
   background-size: 100%, 100%, cover;
 }
-
 /* main content start*/
 .main_page {
-  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 3fr 4fr;
+  position: absolute;
+  margin-top: 100px;
+  width: 100%;
 }
 
 /* description section start*/
@@ -273,9 +272,9 @@ li a {
   margin: 50px 50px 50px 30px;
   border-radius: 3px;
   width: 500px;
-  height: 1050px;
   grid-row: 1 / 4;
   justify-self: end;
+
 }
 .description_section:hover {
   background-color: rgb(29, 43, 114, 0.4);
@@ -481,7 +480,7 @@ li a {
   border-radius: 3px;
   width: 500px;
   text-align: center;
-  height: 460px;
+  height: 400px;
   justify-self: start;
 }
 
@@ -513,6 +512,7 @@ li a {
 }
 .wingman_section-lookup {
   text-align: center;
+  border: 2px solid rgb(3, 8, 45, 0.3);
   justify-self: center;
   padding: 15px 15px 15px 15px;
   margin-top: 20px;
@@ -571,100 +571,7 @@ li a {
 .wingman_section-supportBtn:active {
   opacity: 0.8;
 }
+
 /* wingman section end*/
-
-/*Checkout Refiners section start*/
-.checkoutRefiners_section {
-  grid-row: 3;
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr 4fr;
-  justify-content: space-evenly;
-  background-color: rgb(29, 43, 114, 0.3);
-  padding: 30px;
-  margin: 50px 30px 50px 50px;
-  border-radius: 3px;
-  width: 500px;
-  text-align: center;
-  height: 460px;
-  justify-self: start;
-}
-.checkoutRefiners_section:hover {
-  background-color: rgb(29, 43, 114, 0.4);
-}
-.checkoutRefiners_section-h2 {
-  grid-column: 1/3;
-  justify-self: start;
-}
-.checkoutRefiners_section-playerLookup {
-  grid-row: 2;
-  grid-column: 1/3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
-}
-.checkoutRefiners_section-playerLookupH3 {
-  grid-column: 1/3;
-}
-.checkoutRefiners_section-input {
-  text-align: end;
-  padding-right: 40px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 3px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 25px;
-  border-bottom: 5px solid #1d2b72;
-  border-left: 5px solid #1d2b72;
-  border-top: 5px solid #1d2b72;
-  border-right: 3px solid #1d2b72;
-  font-size: 20px;
-  background-color: white;
-  grid-column: 1 / 4;
-  grid-row: 2;
-  height: 40px;
-  width: 325px;
-  justify-self: start;
-  z-index: 1;
-}
-.checkoutRefiners_section-searchBtn {
-  height: 50px;
-  width: 125px;
-  text-align: center;
-  border-bottom: 5px solid #1d2b72;
-  border-left: 5px solid #1d2b72;
-  border-top: 5px solid #1d2b72;
-  border-right: 3px solid #1d2b72;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 3px;
-  background-color: rgb(73, 226, 135, 1);
-  font-weight: bold;
-  font-size: 17px;
-  color: #1d2b72;
-  grid-row: 2;
-  grid-column: 2/3;
-  justify-self: end;
-  z-index: 2;
-  margin-right: 20px;
-}
-.checkoutRefiners_section-searchBtn:hover {
-  cursor: pointer;
-  background-color: #1d2b72;
-  color: rgb(73, 226, 135, 1);
-}
-.checkoutRefiners_section-searchBtn:active {
-  scale: 0.95;
-  color: rgb(73, 226, 135, 0.8);
-}
-
-.checkoutRefiners_section-playerInfo {
-  grid-row: 3;
-  grid-column: 1/3;
-  background-color: rgb(3, 8, 45, 0.3);
-  border-radius: 3px;
-  margin: 20px 50px 20px 50px;
-  padding: 15px;
-}
-/*Checkout Refiners section end*/
 /*Main content end*/
+  
