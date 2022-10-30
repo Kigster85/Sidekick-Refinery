@@ -82,10 +82,11 @@ p {
 }
 /* When you mouse over the navigation links, change their color */
 .sidenavbtn:hover {
-  color: #ffd039;
-  background-color: #1d2b72;
-  border: 2px solid #2ebc7f;
+  color: #03082D;
+  background-color: #49E287;
+  border: 2px solid #FFD039;
   border-radius: 10px;
+  cursor: pointer;
 }
 /* The sidebar links */
 .sidenav a {
@@ -103,18 +104,18 @@ p {
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #ffffff;
+  cursor: pointer;
   background-color: #ced8f770;
 }
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 30px;
+  font-size: 32px;
   cursor: pointer;
   background-color: #03082d;
   color: #ffffff;
-  padding: 16px 12px;
   border: none;
-  top: 0; /* Position the navbar at the top of the page */
+  margin-top: 2vh;
 }
 
 .openbtn:hover {
@@ -147,10 +148,18 @@ p {
   border-radius: 25px;
   padding: 5px 10px 5px 10px;
   font-weight: bold;
+  max-width: 166px;
+  height: 26px;
+  margin-right: 2vw;
+  margin-top: 3vh;
+  
 }
 .connect_btn:hover {
-  background-color: rgb(255, 208, 57, 1);
-  color: rgb(29, 43, 114, 1);
+  background-color: rgb(29, 43, 114, 0.5);
+  color: rgb(255, 208, 57, 1);
+  border: solid 2px rgb(255, 208, 57, 1);
+  padding: 2px 10px 5px 10px;
+
   cursor: pointer;
 }
 .connect_btn:active {
@@ -158,10 +167,31 @@ p {
 }
 
 .topnav {
-  background-color: #03082d;
-  width: 100%; /* Full width */
-  border-bottom: 4px solid #ffd039;
+  background-color: #03082D;
+  width: 100%; 
+  border-bottom: 4px solid #FFD039;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: auto;
 }
+.topnav > div{
+  width: 33.33%;
+    
+}
+.tnavflexl{
+  text-align: left;
+  margin-left: 1vw;
+}
+.tnavflexm{
+  text-align: center;
+  
+}
+.tnavflexr{
+  text-align: right;
+  margin-right: -1vw;
+}
+
 
 /* List Style Main */
 li {
@@ -182,8 +212,9 @@ li a {
   padding: 0px 16px;
 }
 .headerimg {
-  position: relative;
-  margin-left: 25%;
+  max-height: 9vh;
+  max-width: 20vw;
+  text-align: center;
 }
 .walcon {
   position: relative;
