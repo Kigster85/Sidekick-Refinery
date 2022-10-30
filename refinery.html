@@ -13,67 +13,125 @@
       media="only screen and (max-width: 1139px)"
     />
     <script src="js/sidenavfunc.js"></script>
-
   </head>
   <body>
-    <header>
-      <div class="topnav">
+    <header class="topnav">
+      <div class="tnavflexl">
         <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <img
-          class="headerimg"
-          src="img/Logo files/PNG Small/Logo_horizontal_color for blue BG.png"
-        />
-
-        <button class="connect_btn">Connect to Wallet</button>
-
       </div>
+      <div class="tnavflexm">
+        <img class="headerimg" src="img/Logo files/PNG Small/Logo_horizontal_color for blue BG.png"/>
+      </div>
+      <div class="tnavflexr">
+          <button class="connect_btn">Connect to Wallet</button>
+      </div>
+        
     </header>
+
     <!--Left Side Navigation Start-->
 
     <nav id="mySidebar" class="sidenav">
-
-      <div><button class="close_btn" onclick="closeNav()">close</button></div>
-
-</head>
-<body>
-    <header >
-        <div class="topnav">
-            <button class="openbtn" onclick="openNav()">&#9776; </button>
-                <img class="headerimg" src="img/Logo files/PNG Small/Logo_horizontal_color for blue BG.png" >
-            <button class="walcon">Connect to Wallet</button>
-        </div> 
-    </header>
-        <!--Left Side Navigation Start-->
-        
-        <nav id="mySidebar" class="sidenav">
-            <div><button onclick="closeNav()">&#9776; Close</button></div>
-            <ul>
-                <!--Left side Collapsable Menu-->
-                <li>
-                    <button class="sidenavbtn"> test test test test</button>
-                </li>
-            </ul>
-        </nav>
-        <!--Left Side Navigation End-->
-        <div>
-            <div>
-                
-            </div>
-            <div>
-                    
-            </div>
-        </div>
-
-
+      <button class="close_btn" onclick="closeNav()">close</button>
       <ul>
         <!--Left side Collapsable Menu-->
-        <li>test test test test</li>
+        <li>
+          <button class="sidenavbtn">test test test test</button>
+        </li>
       </ul>
     </nav>
     <!--Left Side Navigation End-->
-    <div>
-      <div></div>
-      <div></div>
-    </div>
+    
+    <!--Background Image with blur effect Start-->
+    <main class="bgimg"></main></main>
+    <!--Background Image with blur effect End-->
+    <!--Main page content start-->
+    <main class="main_page">
+      <!-- Description & stats start-->
+      <section class="description_section">
+        <div class="description_section--stats">
+          <div class="stat">
+            <h3>Available</h3>
+          </div>
+          <div class="stat">
+            <h3>Deposits</h3>
+          </div>
+          <div class="stat">
+            <h3>Claimed</h3>
+          </div>
+          <div class="stat">
+            <h3>Referral Rewards</h3>
+          </div>
+          <div class="stat">
+            <h3>Max Payout</h3>
+          </div>
+          <div class="stat">
+            <h3>Team</h3>
+          </div>
+          <div class="stat">
+            <h3>xSK Balance</h3>
+          </div>
+          <div class="stat">
+            <h3>xHNW Balance</h3>
+          </div>
+        </div>
+        <p class="description__p">
+          The Refinery is an open-ended blockchain CD that allows you to deposit
+          and compound HFUEL tokens daily. By holding xHNW and xSK , you can
+          increase your daily payout percentage and the total rewards you can
+          earn, while also earning from transaction fees of both HNW and SK.
+        </p>
+        <div class="contract_addresses-container">
+          <p class="contract_address">
+            HFUEL Contract Address: 0x157Ba4bBbb2bd7D59024143C2C9E08f6060717a6
+          </p>
+          <p class="contract_address">
+            xHNW Token Contract Address:
+            0xaF4f67A1ed4fB3952ae3dF84ac2ca190E37a43F1
+          </p>
+          <p class="contract_address">
+            xSK Token Contract Address:
+            0xA74Ce0F84d3F6dF9DAe2967a8Cfa645bF6693195
+          </p>
+        </div>
+      </section>
+      <!-- Description & stats end-->
+      <!--Deposit start-->
+      <section class="deposit_section">
+        <h2 class="deposit_h2">DEPOSIT</h2>
+        <p class="deposit_amount-p">Amount</p>
+        <p class="deposit_balance-p">Hfuel Balance:</p>
+        <input class="deposit_input" type="text" placeholder="HFUEL" />
+        <button class="max_btn">MAX</button>
+        <button class="approve_btn">Approve</button>
+        <button class="refuel_btn">Refuel</button>
+        <button class="claim_btn">Claim</button>
+      </section>
+      <!--Deposit end-->
+      <!--Wingman section start-->
+      <section class="wingman_section">
+        <h2 class="wingman_section-h2">GET A WINGMAN</h2>
+        <div class="wingman_section-lookup">
+          <h3>Wingman Lookup</h3>
+          <input
+            class="wingman_section-input"
+            type="text"
+            placeholder="Wingman Address"
+          />
+        </div>
+        <div class="wingman_section-stats">
+          <p>Current Wingman:</p>
+          <p>0x0000000000000000000000000000000000000000</p>
+          <p>Last Checkin:</p>
+          <p>None</p>
+          <p>Inactivity Threshold:</p>
+          <p>0</p>
+        </div>
+        <button class="wingman_section-updateBtn">Update</button>
+        <button class="wingman_section-supportBtn">Support Marketing</button>
+      </section>
+      <!--Wingman section end-->
+    </main>
+  </main>
+    <!--Main page content end-->
   </body>
 </html>
