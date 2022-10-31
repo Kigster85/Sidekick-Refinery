@@ -339,7 +339,7 @@ li a {
 
 .deposit_h2 {
   grid-column: 1;
-  justify-self: center;
+  justify-self: start;
 }
 /*Amount & Hfuel Balance CSS to go here...*/
 
@@ -489,7 +489,7 @@ li a {
 
 .wingman_section-h2 {
   grid-row: 1;
-  justify-self: start;
+  text-align: start;
 }
 .wingman_section-input {
   text-align: end;
