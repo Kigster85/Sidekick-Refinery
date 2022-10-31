@@ -131,29 +131,7 @@
    border: none;
    margin-top: 2vh;
  }
- /* Tool Tip CSS Start! */
- .tooltiptext:after {
-   opacity: 0;
-   width: 90px;
-   background-color: rgb(255, 208, 57, 1);
-   color: rgb(29, 43, 114, 1);
-   text-align: center;
-   border-radius: 5px;
-   -webkit-transition: opacity 1s ease-in-out;
-   -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-   -o-transition: opacity 1s ease-in-out;
-   transition: opacity 1s ease-in-out;
-   /* Position the tooltip */
-   position: absolute;
-   z-index: 10;
- }
- 
- .tooltiptext:hover:after {
-   opacity: 1;
- 
- }
- /* Tool Tip CSS End!*/
+
  .openbtn:hover {
    cursor: pointer;
    color: rgb(73, 226, 135, 1);
