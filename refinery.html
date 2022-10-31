@@ -5,25 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sidekick Refinery</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet-main.css" />
-    <link
-      href="/css/stylesheet-main.css"
-      rel="stylesheet"
-      type="text/css"
-      media="only screen and (max-width: 1139px)"
-    />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet-main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet-main.css" media="only screen and (max-width: 1139px)" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
     <script src="js/sidenavfunc.js"></script>
   </head>
   <body>
     <header class="topnav">
       <div class="tnavflexl">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <span class="tooltiptext" title="Open Menu"><button class="openbtn" onclick="openNav()" alt="Open Menu">&#9776;</button></span>
+        
+
       </div>
       <div class="tnavflexm">
         <img class="headerimg" src="img/Logo files/PNG Small/Logo_horizontal_color for blue BG.png"/>
       </div>
       <div class="tnavflexr">
-          <button class="connect_btn">Connect to Wallet</button>
+        <span class="tooltiptext" title="Connect Wallet"><button class="connect_btn">Connect to Wallet</button></span>
       </div>
         
     </header>
@@ -31,13 +29,17 @@
     <!--Left Side Navigation Start-->
 
     <nav id="mySidebar" class="sidenav">
-      <button class="close_btn" onclick="closeNav()">close</button>
-      <ul>
+      <span class="tooltiptext" title="Close Menu"><button class="close_btn" onclick="closeNav()">close</button></span>
+      
         <!--Left side Collapsable Menu-->
-        <li>
-          <button class="sidenavbtn">test test test test</button>
-        </li>
-      </ul>
+        <div>
+          <div><span class="tooltiptext" title="Button 1 Tooltip"><button class="sidenavbtn">Button 1</button></span></div>
+          <div><span class="tooltiptext" title="Button 2 Tooltip"><button class="sidenavbtn">Button 2</button></span></div> 
+          <div><span class="tooltiptext" title="Button 2 Tooltip"><button class="sidenavbtn">Button 3</button></span></div>
+          <div><span class="tooltiptext" title="Button 2 Tooltip"><button class="sidenavbtn">Button 4</button></span></div>
+          <div><span class="tooltiptext" title="Button 2 Tooltip"><button class="sidenavbtn">Button 5</button></span></div>
+          <div><span class="tooltiptext" title="Button 2 Tooltip"><button class="sidenavbtn">Button 6</button></span></div>
+        </div>
     </nav>
     <!--Left Side Navigation End-->
     
@@ -97,14 +99,16 @@
       <!-- Description & stats end-->
       <!--Deposit start-->
       <section class="deposit_section">
+        <!--<div>-->
         <h2 class="deposit_h2">DEPOSIT</h2>
         <p class="deposit_amount-p">Amount</p>
         <p class="deposit_balance-p">Hfuel Balance:</p>
         <input class="deposit_input" type="text" placeholder="HFUEL" />
-        <button class="max_btn">MAX</button>
-        <button class="approve_btn">Approve</button>
-        <button class="refuel_btn">Refuel</button>
-        <button class="claim_btn">Claim</button>
+        <span class="tooltiptext" title="Max Amount"><button class="max_btn">MAX</button></span>
+        <span class="tooltiptext" title="Approve"><button class="approve_btn">Approve</button></span>
+        <span class="tooltiptext" title="Refuel"><button class="refuel_btn">Refuel</button></span>
+        <span class="tooltiptext" title="Claim"><button class="claim_btn">Claim</button></span>
+        <!--</div>-->
       </section>
       <!--Deposit end-->
       <!--Wingman section start-->
@@ -126,8 +130,8 @@
           <p>Inactivity Threshold:</p>
           <p>0</p>
         </div>
-        <button class="wingman_section-updateBtn">Update</button>
-        <button class="wingman_section-supportBtn">Support Marketing</button>
+        <span class="tooltiptext" title="Update"><button class="wingman_section-updateBtn">Update</button></span>
+        <span class="tooltiptext" title="Support Marketing"><button class="wingman_section-supportBtn">Support Marketing</button></span>
       </section>
       <!--Wingman section end-->
     </main>
