@@ -1,578 +1,670 @@
 /* Main Website Style Guide*/
-*{
-  padding:0px;
-  margin:0px; 
- }
- header,
- article,
- footer,
- nav {
-   display: block;
-   max-width: 100%;
- }
- body {
-   background-color: #000c1f;
-   line-height: 1;
-   padding: 0px;
-   margin: 0px;
-   height: 100%;
-   
- }
- /*Font settings for entire Site*/
- h1, h2, h3, h4, h5, h6 {
-   color: #ffffff;
-   max-width: 60ch;
-   line-height: 1.1;
- }
- h1 {
-   font-size: 2vw;
- }
- h2 {
-   font-size: 1.75vw;
- }
- h3 {
-   font-size: 1.2vw;
- }
- h4 {
-   font-size: 1vw;
- }
- h5 {
-   font-size: 1vw;
- }
- p {
-   font-size: 1.05vw;
-   color: rgb(255, 255, 255);
-   max-width: 60ch;
- }
- 
- /* The start of the side naviagtion CSS */
- .sidenav {
-   height: 100%; /* 100% Full-height */
-   width: 250px; /* 0 width - change this with JavaScript */
-   position: fixed; /* Stay in place */
-   background-color: #03082D; /* Black*/
-   overflow-x: hidden; /* Disable horizontal scroll */
-   padding-top: 60px; /* Place content 60px from the top */
-   transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
-   transition-timing-function: ease-in-out;
-   animation: fadeIn ease 1s;
-   z-index: 11;
-   border-right: 3px solid #FFD039;
-   top: 0;
-   left: -255px;
-   
- }
- /* The side navigaion links */
- .sidenavbtn {
-   text-decoration: none;
-   font-size: 25px;
-   background-color: #2EBC7F;
-   color: #03082D;
-   display: block;
-   transition: 0.3s;
-   transition-timing-function: ease-in-out;
-   scroll-behavior: smooth;
-   border: 2px solid #03082D;
-   width: 100%;
- }
- /* When you mouse over the navigation links, change their color */
- .sidenavbtn:hover {
-   color: #2EBC7F;
-   background-color: rgb(29, 43, 114, 0.3);
-   border-top: 2px solid #FFD039;
-   border-bottom: 2px solid #FFD039;
-   cursor: pointer;
- }
- /* The sidebar links */
- .sidenav a {
-   position: relative;
-   display: flex;
-   align-items: center;
-   align-content: center;
-   height: 44px;
-   padding: 0 1.5rem;
-   font-size: 1.06rem;
-   white-space: nowrap;
-   font-weight: 700;
-   text-decoration: none;
- 
- }
- 
- /* When you mouse over the navigation links, change their color */
- .sidenav a:hover {
-   color: #ffffff;
-   cursor: pointer;
-   background-color: #ced8f770;
- }
- /* List Style SideBar */
- li {
-   background-color: #03082D;
- }
- ul {
-   background-color: #ddddddfd;
- }
- a {
-   display: inline-block;
-   padding: 10px;
-   background-color: #07010100;
- }
- li a {
-   display: inline-block;
-   color: white;
-   text-align: center;
-   padding: 0px 16px;
- }
- /* The button used to open the sidebar */
- .openbtn {
-   font-size: 32px;
-   cursor: pointer;
-   background-color: #03082D;
-   color: #ffffff;
-   border: none;
-   margin-top: 2vh;
- }
+* {
+  padding: 0px;
+  margin: 0px;
+}
+header,
+article,
+footer,
+nav {
+  display: block;
+  max-width: 100%;
+}
+body {
+  background-color: #000c1f;
+  line-height: 1;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+/*Font settings for entire Site*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+  max-width: 60ch;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 2vw;
+}
+h2 {
+  font-size: 1.75vw;
+}
+h3 {
+  font-size: 1.2vw;
+}
+h4 {
+  font-size: 1vw;
+}
+h5 {
+  font-size: 1vw;
+}
+p {
+  font-size: 1.05vw;
+  color: rgb(255, 255, 255);
+  max-width: 60ch;
+}
 
- .openbtn:hover {
-   cursor: pointer;
-   color: rgb(73, 226, 135, 1);
- }
- 
- /* button to close the sidebar */
- .close_btn {
-   border-style: none;
-   background-color: transparent;
-   color: rgb(73, 226, 135, 0.8);
-   float: right;
-   padding: 10px;
-   font-size: 18px;
- }
- .close_btn:hover {
-   scale: 1.3;
-   cursor: pointer;
- }
- .close_btn:active {
-   color: rgb(73, 226, 135, 1);
- }
- 
- /* Connect to wallet button */
- .connect_btn {
-   border-style: none;
-   background-color: rgb(255, 208, 57, 1);
-   font-size: 15px;
-   color: rgb(29, 43, 114, 1);
-   border-radius: 25px;
-   padding: 5px 10px 5px 10px;
-   font-weight: bold;
-   max-width: 166px;
-   margin-right: 2vw;
-   margin-top: 3vh;
-   word-wrap: break-word;
- }
- .connect_btn:hover {
-   background-color: rgb(29, 43, 114, 0.5);
-   color: rgb(255, 208, 57, 1);
-   border: solid 2px rgb(255, 208, 57, 1);
-   padding: 2px 10px 5px 10px;
-   cursor: pointer;
- }
- .connect_btn:active {
-   background-color: rgb(29, 43, 114, 0.5);
-   color: rgb(255, 208, 57, 0.5);
-   border: solid 2px rgb(255, 208, 57, 0.5);
- }
- 
- 
- .topnav {
-   background-color: #03082D;
-   width: 100%; 
-   border-bottom: 4px solid #FFD039;
-   display: flex;
-   flex-wrap: wrap;
-   margin: auto;
-   height: 9vh;
-   position: fixed;
-   z-index: 10;
- }
- .topnav > div{
-   width: 33.33%;
-     
- }
- .tnavflexl{
-   text-align: left;
-   margin-left: 1vw;
- }
- .tnavflexm{
-   text-align: center;
-   
- }
- .tnavflexr{
-   text-align: right;
-   margin-right: -1vw;
- }
- 
- 
- .headerimg {
-   max-height: 9vh;
-   max-width: 20vw;
-   text-align: center;
- }
- .walcon {
-   position: relative;
-   margin-left: 25%;
- }
- 
- .bgimg{
-   /*background-color: rgba(46, 188, 127, 1);*/
-   background-image: url(../img/bgimg/Logo_mark_blue@3x.png);
-   background-blend-mode: hard-light;
-   background-repeat: no-repeat;
-   background-size: 40%, 100%, cover;
-   filter: blur(25px);
-   width: 100%;
-   height: 100%;
-   background-position: center;
-   position: fixed;
-   opacity: 0.6;
-   z-index: -1;
- }
- .bgimg_2{
-   background-color: rgba(3, 8, 45, 1);
-   background-image: url(../img/bgimg/Logo_mark_blue.svg);
-   background-blend-mode: hard-light;
-   background-repeat: no-repeat;
-   background-size: 70%, 100%, cover;
-   filter: blur(8px);
-   width: 100%;
-   height: 100%;
-   background-position: bottom;
-   position: absolute;
-   opacity: 0.6;
-   z-index: -1;
- }
- 
- .mainbgimg{
-   background-color: rgba(40, 104, 51, 0.589);
-   background-image: url(/img/bgimg/Logo_mark_black@3x.png);
-   background-blend-mode: hard-light;
-   background-repeat: no-repeat;
-   background-size: 100%, 100%, cover;
- }
- /* main content start*/
- .main_page {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 2fr 3fr 4fr;
-   position: absolute;
-   margin-top: 100px;
-   width: 100%;
- }
- 
- /* description section start*/
- .description_section {
-   background-color: rgb(29, 43, 114, 0.3);
-   padding: 30px;
-   margin: 50px 50px 50px 30px;
-   border-radius: 3px;
-   width: 500px;
-   grid-row: 1 / 4;
-   justify-self: end;
- 
- }
- .description_section:hover {
-   background-color: rgb(29, 43, 114, 0.4);
- }
- .description_section--stats {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
-   justify-content: space-evenly;
-   align-content: space-evenly;
-   margin-bottom: 20px;
- }
- .description__p {
-   margin: 10px 15px 10px 25px;
-   padding: 15px 15px 15px 15px;
-   background-color: rgb(3, 8, 45, 0.3);
-   border-radius: 3px;
- }
- .stat {
-   height: 150px;
-   width: 200px;
-   text-align: center;
-   background-color: rgb(3, 8, 45, 0.3);
-   justify-self: center;
-   padding-top: 10px;
-   margin-top: 20px;
-   border-radius: 3px;
- }
- .contract_addresses-container {
-   margin-left: 30px;
-   display: flex;
-   flex-direction: column;
-   width: 440px;
- }
- .contract_address {
-   text-align: start;
-   background-color: rgb(3, 8, 45, 0.3);
-   margin-bottom: 10px;
-   padding: 10px 10px 10px 10px;
- }
- /* description section end*/
- 
- /* deposit section start*/
- .deposit_section {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   justify-content: space-evenly;
-   background-color: rgb(29, 43, 114, 0.3);
-   padding: 30px;
-   margin: 50px 30px 50px 50px;
-   border-radius: 3px;
-   width: 500px;
-   text-align: center;
-   grid-column: 2;
-   height: 200px;
-   justify-self: start;
- }
- 
- .deposit_section:hover {
-   background-color: rgb(29, 43, 114, 0.4);
- }
- 
- .deposit_h2 {
-   grid-column: 1;
-   justify-self: center;
- }
- /*Amount & Hfuel Balance CSS to go here...*/
- 
- .deposit_input {
-   text-align: end;
-   padding-right: 40px;
-   border-top-right-radius: 25px;
-   border-top-left-radius: 3px;
-   border-bottom-right-radius: 2px;
-   border-bottom-left-radius: 25px;
-   border-bottom: 5px solid #1d2b72;
-   border-left: 5px solid #1d2b72;
-   border-top: 5px solid #1d2b72;
-   border-right: 3px solid #1d2b72;
-   font-size: 20px;
-   background-color: white;
-   grid-column: 1 / span 3;
-   grid-row: 2;
-   height: 40px;
-   width: 325px;
-   justify-self: start;
-   z-index: 1;
- }
- 
- .max_btn {
-   height: 50px;
-   width: 125px;
-   text-align: center;
-   border-bottom: 5px solid #1d2b72;
-   border-left: 5px solid #1d2b72;
-   border-top: 5px solid #1d2b72;
-   border-right: 3px solid #1d2b72;
-   border-top-right-radius: 25px;
-   border-bottom-left-radius: 25px;
-   border-bottom-right-radius: 3px;
-   background-color: rgb(73, 226, 135, 1);
-   font-weight: bold;
-   font-size: 17px;
-   color: #1d2b72;
-   grid-row: 2;
-   grid-column-start: 3;
-   grid-column-end: 3;
-   justify-self: center;
-   z-index: 2;
- }
- .max_btn:hover {
-   cursor: pointer;
-   background-color: #1d2b72;
-   color: rgb(73, 226, 135, 1);
- }
- .max_btn:active {
-   scale: 0.95;
-   color: rgb(73, 226, 135, 0.8);
- }
- 
- .approve_btn {
-   padding: 10px 24px;
-   border-radius: 3px;
-   border-style: none;
-   margin: 10px;
-   font-size: 15px;
-   font-weight: bold;
-   color: #1d2b72;
-   background-color: rgb(255, 208, 57, 1);
-   grid-column: 1;
-   grid-row: 3;
-   justify-self: center;
- }
- .approve_btn:hover {
-   cursor: pointer;
-   color: rgb(255, 208, 57, 1);
-   background-color: #1d2b72;
- }
- .approve_btn:active {
-   opacity: 0.8;
- }
- 
- .refuel_btn {
-   padding: 10px 24px;
-   border-radius: 3px;
-   border-style: none;
-   margin: 10px;
-   font-size: 15px;
-   font-weight: bold;
-   color: #1d2b72;
-   background-color: rgb(255, 208, 57, 1);
-   grid-column: 2;
-   grid-row: 3;
-   justify-self: center;
- }
- .refuel_btn:hover {
-   cursor: pointer;
-   color: rgb(255, 208, 57, 1);
-   background-color: #1d2b72;
- }
- 
- .refuel_btn:active {
-   opacity: 0.8;
- }
- 
- .claim_btn {
-   padding: 10px 24px;
-   border-radius: 3px;
-   border-style: none;
-   margin: 10px;
-   font-size: 15px;
-   font-weight: bold;
-   color: #1d2b72;
-   background-color: rgb(255, 208, 57, 1);
-   grid-column: 3;
-   grid-row: 3;
-   justify-self: center;
- }
- 
- .claim_btn:hover {
-   cursor: pointer;
-   color: rgb(255, 208, 57, 1);
-   background-color: #1d2b72;
- }
- 
- .claim_btn:active {
-   opacity: 0.8;
- }
- /* deposit section end */
- 
- /* wingman section start*/
- .wingman_section {
-   grid-row: 2;
-   grid-column: 2;
-   /* display: grid; */
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 2fr 2fr 2fr;
-   justify-content: space-evenly;
-   background-color: rgb(29, 43, 114, 0.3);
-   padding: 30px;
-   margin: 20px 30px 50px 50px;
-   border-radius: 3px;
-   width: 500px;
-   text-align: center;
-   height: 400px;
-   justify-self: start;
- }
- 
- .wingman_section:hover {
-   background-color: rgb(29, 43, 114, 0.4);
- }
- 
- .wingman_section-h2 {
-   grid-row: 1;
-   justify-self: start;
- }
- .wingman_section-input {
-   text-align: end;
-   padding-right: 40px;
-   margin-top: 20px;
-   border-top-right-radius: 25px;
-   border-top-left-radius: 3px;
-   border-bottom-right-radius: 2px;
-   border-bottom-left-radius: 25px;
-   border-bottom: 5px solid #1d2b72;
-   border-left: 5px solid #1d2b72;
-   border-top: 5px solid #1d2b72;
-   border-right: 3px solid #1d2b72;
-   font-size: 20px;
-   background-color: white;
-   height: 40px;
-   width: 325px;
-   justify-self: center;
- }
- .wingman_section-lookup {
-   text-align: center;
-   border: 2px solid rgb(3, 8, 45, 0.3);
-   justify-self: center;
-   padding: 15px 15px 15px 15px;
-   margin-top: 20px;
-   border-radius: 3px;
-   grid-row: 2;
-   grid-column: 1 / span 2;
- }
- .wingman_section-stats {
-   grid-row: 3;
-   grid-column: 1/3;
-   margin: 20px 50px 20px 50px;
-   padding: 15px 15px 15px 15px;
-   background-color: rgb(3, 8, 45, 0.3);
-   border-radius: 3px;
- }
- .wingman_section-updateBtn {
-   grid-row: 4;
-   grid-column: 1;
-   padding: 10px 24px;
-   border-radius: 3px;
-   border-style: none;
-   margin: 10px;
-   font-size: 15px;
-   font-weight: bold;
-   color: #1d2b72;
-   background-color: rgb(73, 226, 135, 1);
-   justify-self: center;
- }
- .wingman_section-updateBtn:hover {
-   cursor: pointer;
-   background-color: #1d2b72;
-   color: rgb(73, 226, 135, 1);
- }
- .wingman_section-updateBtn:active {
-   opacity: 0.8;
- }
- 
- .wingman_section-supportBtn {
-   grid-row: 4;
-   grid-column: 2;
-   padding: 10px 24px;
-   border-radius: 3px;
-   border-style: none;
-   margin: 10px;
-   font-size: 15px;
-   font-weight: bold;
-   color: #1d2b72;
-   background-color: rgb(73, 226, 135, 1);
-   justify-self: start;
- }
- .wingman_section-supportBtn:hover {
-   cursor: pointer;
-   background-color: #1d2b72;
-   color: rgb(73, 226, 135, 1);
- }
- .wingman_section-supportBtn:active {
-   opacity: 0.8;
- }
- 
- /* wingman section end*/
- /*Main content end*/
+/* The start of the side naviagtion CSS */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  background-color: #03082d; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
+  transition-timing-function: ease-in-out;
+  animation: fadeIn ease 1s;
+  z-index: 11;
+  border-right: 3px solid #ffd039;
+  top: 0;
+  left: -255px;
+}
+/* The side navigaion links */
+.sidenavbtn {
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #2ebc7f;
+  color: #03082d;
+  display: block;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  scroll-behavior: smooth;
+  border: 2px solid #03082d;
+  width: 100%;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenavbtn:hover {
+  color: #2ebc7f;
+  background-color: rgb(29, 43, 114, 0.3);
+  border-top: 2px solid #ffd039;
+  border-bottom: 2px solid #ffd039;
+  cursor: pointer;
+}
+/* The sidebar links */
+.sidenav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 44px;
+  padding: 0 1.5rem;
+  font-size: 1.06rem;
+  white-space: nowrap;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #ced8f770;
+}
+/* List Style SideBar */
+li {
+  background-color: #03082d;
+}
+ul {
+  background-color: #ddddddfd;
+}
+a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #07010100;
+}
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+}
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 32px;
+  cursor: pointer;
+  background-color: #03082d;
+  color: #ffffff;
+  border: none;
+  margin-top: 2vh;
+}
+
+.openbtn:hover {
+  cursor: pointer;
+  color: rgb(73, 226, 135, 1);
+}
+
+/* button to close the sidebar */
+.close_btn {
+  border-style: none;
+  background-color: transparent;
+  color: rgb(73, 226, 135, 0.8);
+  float: right;
+  padding: 10px;
+  font-size: 18px;
+}
+.close_btn:hover {
+  scale: 1.3;
+  cursor: pointer;
+}
+.close_btn:active {
+  color: rgb(73, 226, 135, 1);
+}
+
+/* Connect to wallet button */
+.connect_btn {
+  border-style: none;
+  background-color: rgb(255, 208, 57, 1);
+  font-size: 15px;
+  color: rgb(29, 43, 114, 1);
+  border-radius: 25px;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+  max-width: 166px;
+  margin-right: 2vw;
+  margin-top: 3vh;
+  word-wrap: break-word;
+}
+.connect_btn:hover {
+  background-color: rgb(29, 43, 114, 0.5);
+  color: rgb(255, 208, 57, 1);
+  border: solid 2px rgb(255, 208, 57, 1);
+  padding: 2px 10px 5px 10px;
+  cursor: pointer;
+}
+.connect_btn:active {
+  background-color: rgb(29, 43, 114, 0.5);
+  color: rgb(255, 208, 57, 0.5);
+  border: solid 2px rgb(255, 208, 57, 0.5);
+}
+
+.topnav {
+  background-color: #03082d;
+  width: 100%;
+  border-bottom: 4px solid #ffd039;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 9vh;
+  position: fixed;
+  z-index: 10;
+}
+.topnav > div {
+  width: 33.33%;
+}
+.tnavflexl {
+  text-align: left;
+  margin-left: 1vw;
+}
+.tnavflexm {
+  text-align: center;
+}
+.tnavflexr {
+  text-align: right;
+  margin-right: -1vw;
+}
+
+.headerimg {
+  max-height: 9vh;
+  max-width: 20vw;
+  text-align: center;
+}
+.walcon {
+  position: relative;
+  margin-left: 25%;
+}
+
+.bgimg {
+  /*background-color: rgba(46, 188, 127, 1);*/
+  background-image: url(../img/bgimg/Logo_mark_blue@3x.png);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: 40%, 100%, cover;
+  filter: blur(25px);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  position: fixed;
+  opacity: 0.6;
+  z-index: -1;
+}
+.bgimg_2 {
+  background-color: rgba(3, 8, 45, 1);
+  background-image: url(../img/bgimg/Logo_mark_blue.svg);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: 70%, 100%, cover;
+  filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  background-position: bottom;
+  position: absolute;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.mainbgimg {
+  background-color: rgba(40, 104, 51, 0.589);
+  background-image: url(/img/bgimg/Logo_mark_black@3x.png);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%, cover;
+}
+/* main content start*/
+.main_page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 3fr 4fr;
+  position: absolute;
+  margin-top: 100px;
+  width: 100%;
+}
+
+/* description section start*/
+.description_section {
+  background-color: rgb(29, 43, 114, 0.3);
+  padding: 30px;
+  margin: 50px 50px 50px 30px;
+  border-radius: 3px;
+  width: 500px;
+  grid-row: 1 / 4;
+  justify-self: end;
+}
+.description_section:hover {
+  background-color: rgb(29, 43, 114, 0.4);
+}
+.description_section--stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  margin-bottom: 20px;
+}
+.description__p {
+  margin: 10px 15px 10px 25px;
+  padding: 15px 15px 15px 15px;
+  background-color: rgb(3, 8, 45, 0.3);
+  border-radius: 3px;
+}
+.stat {
+  height: 150px;
+  width: 200px;
+  text-align: center;
+  background-color: rgb(3, 8, 45, 0.3);
+  justify-self: center;
+  padding-top: 10px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+.contract_addresses-container {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+}
+.contract_address {
+  text-align: start;
+  background-color: rgb(3, 8, 45, 0.3);
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+}
+/* description section end*/
+
+/* deposit section start*/
+.deposit_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-evenly;
+  background-color: rgb(29, 43, 114, 0.3);
+  padding: 30px;
+  margin: 50px 30px 50px 50px;
+  border-radius: 3px;
+  width: 500px;
+  text-align: center;
+  grid-column: 2;
+  height: 200px;
+  justify-self: start;
+}
+
+.deposit_section:hover {
+  background-color: rgb(29, 43, 114, 0.4);
+}
+
+.deposit_h2 {
+  grid-column: 1;
+  justify-self: start;
+}
+/*Amount & Hfuel Balance CSS to go here...*/
+
+.deposit_input {
+  text-align: end;
+  padding-right: 40px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 25px;
+  border-bottom: 5px solid #1d2b72;
+  border-left: 5px solid #1d2b72;
+  border-top: 5px solid #1d2b72;
+  border-right: 3px solid #1d2b72;
+  font-size: 20px;
+  background-color: white;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  height: 40px;
+  width: 325px;
+  justify-self: start;
+  z-index: 1;
+}
+
+.max_btn {
+  height: 50px;
+  width: 125px;
+  text-align: center;
+  border-bottom: 5px solid #1d2b72;
+  border-left: 5px solid #1d2b72;
+  border-top: 5px solid #1d2b72;
+  border-right: 3px solid #1d2b72;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 3px;
+  background-color: rgb(73, 226, 135, 1);
+  font-weight: bold;
+  font-size: 17px;
+  color: #1d2b72;
+  grid-row: 2;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  justify-self: center;
+  z-index: 2;
+}
+.max_btn:hover {
+  cursor: pointer;
+  background-color: #1d2b72;
+  color: rgb(73, 226, 135, 1);
+}
+.max_btn:active {
+  scale: 0.95;
+  color: rgb(73, 226, 135, 0.8);
+}
+
+.approve_btn {
+  padding: 10px 24px;
+  border-radius: 3px;
+  border-style: none;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1d2b72;
+  background-color: rgb(255, 208, 57, 1);
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: center;
+}
+.approve_btn:hover {
+  cursor: pointer;
+  color: rgb(255, 208, 57, 1);
+  background-color: #1d2b72;
+}
+.approve_btn:active {
+  opacity: 0.8;
+}
+
+.refuel_btn {
+  padding: 10px 24px;
+  border-radius: 3px;
+  border-style: none;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1d2b72;
+  background-color: rgb(255, 208, 57, 1);
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: center;
+}
+.refuel_btn:hover {
+  cursor: pointer;
+  color: rgb(255, 208, 57, 1);
+  background-color: #1d2b72;
+}
+
+.refuel_btn:active {
+  opacity: 0.8;
+}
+
+.claim_btn {
+  padding: 10px 24px;
+  border-radius: 3px;
+  border-style: none;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1d2b72;
+  background-color: rgb(255, 208, 57, 1);
+  grid-column: 3;
+  grid-row: 3;
+  justify-self: center;
+}
+
+.claim_btn:hover {
+  cursor: pointer;
+  color: rgb(255, 208, 57, 1);
+  background-color: #1d2b72;
+}
+
+.claim_btn:active {
+  opacity: 0.8;
+}
+/* deposit section end */
+
+/* wingman section start*/
+.wingman_section {
+  grid-row: 2;
+  grid-column: 2;
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+  justify-content: space-evenly;
+  background-color: rgb(29, 43, 114, 0.3);
+  padding: 30px 30px 50px 30px;
+  margin: 20px 30px 50px 50px;
+  border-radius: 3px;
+  width: 500px;
+  text-align: center;
+  height: 400px;
+  justify-self: start;
+}
+
+.wingman_section:hover {
+  background-color: rgb(29, 43, 114, 0.4);
+}
+
+.wingman_section-h2 {
+  grid-row: 1;
+  text-align: start;
+}
+.wingman_section-input {
+  text-align: end;
+  padding-right: 40px;
+  margin-top: 20px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 25px;
+  border-bottom: 5px solid #1d2b72;
+  border-left: 5px solid #1d2b72;
+  border-top: 5px solid #1d2b72;
+  border-right: 3px solid #1d2b72;
+  font-size: 20px;
+  background-color: white;
+  height: 40px;
+  width: 325px;
+  justify-self: center;
+}
+.wingman_section-lookup {
+  text-align: center;
+  border: 2px solid rgb(3, 8, 45, 0.3);
+  justify-self: center;
+  padding: 15px 15px 15px 15px;
+  margin-top: 20px;
+  border-radius: 3px;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+.wingman_section-stats {
+  grid-row: 3;
+  grid-column: 1/3;
+  margin: 20px 50px 20px 50px;
+  padding: 15px 15px 15px 15px;
+  background-color: rgb(3, 8, 45, 0.3);
+  border-radius: 3px;
+}
+.wingman_section-updateBtn {
+  grid-row: 4;
+  grid-column: 1;
+  padding: 10px 24px;
+  border-radius: 3px;
+  border-style: none;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1d2b72;
+  background-color: rgb(73, 226, 135, 1);
+  justify-self: center;
+}
+.wingman_section-updateBtn:hover {
+  cursor: pointer;
+  background-color: #1d2b72;
+  color: rgb(73, 226, 135, 1);
+}
+.wingman_section-updateBtn:active {
+  opacity: 0.8;
+}
+
+.wingman_section-supportBtn {
+  grid-row: 4;
+  grid-column: 2;
+  padding: 10px 24px;
+  border-radius: 3px;
+  border-style: none;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1d2b72;
+  background-color: rgb(73, 226, 135, 1);
+  justify-self: start;
+}
+.wingman_section-supportBtn:hover {
+  cursor: pointer;
+  background-color: #1d2b72;
+  color: rgb(73, 226, 135, 1);
+}
+.wingman_section-supportBtn:active {
+  opacity: 0.8;
+}
+
+/* wingman section end*/
+
+/*Checkout Refiners section start*/
+.checkoutRefiners_section {
+  grid-row: 3;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 4fr;
+  justify-content: space-evenly;
+  background-color: rgb(29, 43, 114, 0.3);
+  padding: 30px;
+  margin: 50px 30px 50px 50px;
+  border-radius: 3px;
+  width: 500px;
+  text-align: center;
+  height: 460px;
+  justify-self: start;
+}
+.checkoutRefiners_section:hover {
+  background-color: rgb(29, 43, 114, 0.4);
+}
+.checkoutRefiners_section-h2 {
+  grid-column: 1/3;
+  justify-self: start;
+}
+.checkoutRefiners_section-playerLookup {
+  grid-row: 2;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+.checkoutRefiners_section-playerLookupH3 {
+  grid-column: 1/3;
+}
+.checkoutRefiners_section-input {
+  text-align: end;
+  padding-right: 40px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 25px;
+  border-bottom: 5px solid #1d2b72;
+  border-left: 5px solid #1d2b72;
+  border-top: 5px solid #1d2b72;
+  border-right: 3px solid #1d2b72;
+  font-size: 20px;
+  background-color: white;
+  grid-column: 1 / 4;
+  grid-row: 2;
+  height: 40px;
+  width: 325px;
+  justify-self: start;
+  z-index: 1;
+}
+.checkoutRefiners_section-searchBtn {
+  height: 50px;
+  width: 125px;
+  text-align: center;
+  border-bottom: 5px solid #1d2b72;
+  border-left: 5px solid #1d2b72;
+  border-top: 5px solid #1d2b72;
+  border-right: 3px solid #1d2b72;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 3px;
+  background-color: rgb(73, 226, 135, 1);
+  font-weight: bold;
+  font-size: 17px;
+  color: #1d2b72;
+  grid-row: 2;
+  grid-column: 2/3;
+  justify-self: end;
+  z-index: 2;
+  margin-right: 20px;
+}
+.checkoutRefiners_section-searchBtn:hover {
+  cursor: pointer;
+  background-color: #1d2b72;
+  color: rgb(73, 226, 135, 1);
+}
+.checkoutRefiners_section-searchBtn:active {
+  scale: 0.95;
+  color: rgb(73, 226, 135, 0.8);
+}
+
+.checkoutRefiners_section-playerInfo {
+  grid-row: 3;
+  grid-column: 1/3;
+  background-color: rgb(3, 8, 45, 0.3);
+  border-radius: 3px;
+  margin: 20px 50px 20px 50px;
+  padding: 15px;
+}
+/*Checkout Refiners section end*/
+/*Main content end*/
