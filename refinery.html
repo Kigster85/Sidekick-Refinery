@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet-main.css"/>
     <link rel="stylesheet" type="text/css" href="css/stylesheet-main.css" media="only screen and (max-width: 1139px)" />
     <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/sidenavfunc.js"></script>
   </head>
   <body>
@@ -45,11 +46,18 @@
     
     <!--Background Image with blur effect Start-->
     <main class="bgimg"></main></main>
+    
     <!--Background Image with blur effect End-->
     <!--Main page content start-->
-    <main class="main_page">
+    <main id="top"class="main_page">
+      <!--To Top Button Start-->
+
+      
       <!-- Description & stats start-->
       <section class="description_section">
+        <!--To Top Button Start-->
+        <a href="#top"><button id="myBtn" title="Go to top">Top</button></a>
+        <!--To Top Button End-->
         <div class="description_section--stats">
           <div class="stat">
             <h3>Available</h3>
@@ -134,37 +142,202 @@
         <button class="wingman_section-supportBtn" title="Support Marketing">Support Marketing</button>
       </section>
       <!--Wingman section end-->
-      <!--Checkout Refiners section start-->
-      <section class="checkoutRefiners_section">
-        <h2 class="checkoutRefiners_section-h2">CHECKOUT REFINERS</h2>
-        <div class="checkoutRefiners_section-playerLookup">
-          <h3 class="checkoutRefiners_section-playerLookupH3">Player Lookup</h3>
-          <input
-            class="checkoutRefiners_section-input"
-            type="text"
-            placeholder="Player Address"
-          />
-          <button class="checkoutRefiners_section-searchBtn">Search</button>
+
+      <!--AirDrop Section Start-->
+
+      <section class="air_drop_section">
+
+        <!--Horizontal Navigation Buttons Start-->
+
+        <div>
+          <button class="air_drop_btn" title="Team Viewer">Team Viewer</button>
+          <button class="air_drop_btn" title="Team Airdrop">Team Airdrop</button>
+          <button class="air_drop_btn" title="Direct Airdrop">Direct Airdrop</button>
         </div>
-        <div class="checkoutRefiners_section-playerInfo">
-          <h3>Player Info</h3>
-          <p>Directs:</p>
-          <p>0</p>
-          <p>Team:</p>
-          <p>0</p>
-          <p>Net Deposits:</p>
-          <p>0 Hfuel</p>
-          <p>Airdrop Sent / Recieved:</p>
-          <p>0 / 0 Hfuel</p>
-          <p>Airdrop Last Sent:</p>
-          <p>-</p>
-          <p>Total Deposits:</p>
-          <p>0 Hfuel</p>
-        </div>
+
+        <!--Horizontal Navigation Buttons End-->
+
+        <!--Team Viewer Content Section Start-->
+
+          <section id="airdrop1" class="team_viewer_content">
+            <h2>Player</h2>
+            <input type="text" name="Player Address" placeholder="Player Address">
+            <button class="air_drop_btn" title="Show">Show</button>
+            <button class="air_drop_btn" title="Use My Address">Use My Address</button>
+            <button class="air_drop_btn" title="View All">View All</button>
+          </section>
+
+        <!--Team Viewer Content Section End-->
+
+        <!--Team Airdrop Content Section Start-->
+
+          <section id="airdrop2" class="team_airdrop_section">
+            <h2>Player</h2>
+            <input type="text" name="Player Address" placeholder="Player Address">
+            <button class="air_drop_btn" title="Use My Address">Use My Address</button>
+            <h3>Campaign</h3>
+
+            <!--Dropdown list settings Start-->
+
+            <select class="dropdown_lists">
+              <option value="Divide budget between all matching players">Divide budget between all matching players</option>
+              <option value="Divide budget to 1 matching player">Divide budget to 1 matching player*</option>
+              <option value="Divide budget across 3 matching players">Divide budget across 3 matching players*</option>
+              <option value="Divide budget across 5 matching players">Divide budget across 5 matching players*</option>
+              <option value="Divide budget across 10 matching players">Divide budget across 10 matching players*</option>
+              <option value="Divide budget across 20 matching players">Divide budget across 20 matching players*</option>
+              <option value="Divide budget across 50 matching players">Divide budget across 50 matching players*</option>
+              <option value="Divide budget across 100 matching players">Divide budget across 100 matching players*</option>
+            </select>
+
+            <!--Dropdown list settings End-->
+
+            <span class="astrix_info">* Eligible matching players selected at random.</span>
+            <h3>Minimum directs</h3>
+
+            <!--Dropdown list settings Start-->
+
+            <select class="dropdown_lists">
+              <option value="None">None</option>
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="15">15</option>
+            </select>
+
+            <!--Dropdown list settings End-->
+
+            <h3>Team Depth</h3>
+
+            <!--Dropdown list settings Start-->
+
+            <select class="dropdown_lists">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="30">30</option>
+            </select>
+
+            <!--Dropdown list settings End-->
+
+            <h3>Minimum Net Deposits</h3>
+
+            <!--Dropdown list settings Start-->
+
+            <select class="dropdown_lists">
+              <option value="1">1+</option>
+              <option value="50+">50+</option>
+              <option value="100+">100+</option>
+              <option value="250+">250+</option>
+              <option value="500+">500+</option>
+              <option value="1000+">1000+</option>
+              <option value="5000+">5000+</option>
+              <option value="10000+">10000+</option>
+              <option value="20000+">20000+</option>
+              <option value="30000+">30000+</option>
+              <option value="40000+">40000+</option>
+              <option value="50000+">50000+</option>
+              <option value="60000+">60000+</option>
+              <option value="70000+">70000+</option>
+              <option value="100000+">100000+</option>
+            </select>            
+
+            <!--Dropdown list settings End-->
+
+            <h3>Budget</h3>
+            <input type="text" name="FUEL" placeholder="Fuel">
+            <span>Available: N/A Fuel</span>
+            <span>Number of recipients:</span>
+            <span>Estimated Fuel per person: N/A</span>
+            <button class="air_drop_btn" title="Run">Run</button>
+            <button class="air_drop_btn" title="Send">Send</button>
+            <hr>
+            <h3>Campaign Console</h3>
+            <textarea></textarea>
+            <h3>Campaign Viewer</h3>
+            <h4>ID</h4>
+            <h4>Address</h4>
+            <h4>Directs</h4>
+            <h4>Team Depth</h4>
+            <h4>Deposits</h4>
+            <input type="checkbox">
+            <hr>
+            <span>No Data</span>
+
+        <!--Team Airdrop Content Section End-->   
+        
+        <!--Direct Airdrop Content Section Start-->  
+
+          </section>
+          <section id="airdrop3" class="direct_airdrop">
+            <h2>Direct Airdrop</h2>
+            <h3>Player</h3>
+            <input type="text" name="Player Address" placeholder="Player Address">
+            <h3>Amount</h3>
+            <h3>Available: N/A Fuel</h3>
+            <input type="number" min="0" name="Amount to Send" placeholder="Amount to Send">
+          </section>
+
+        <!--Direct Airdrop Content Section End-->         
+
       </section>
-      <!--Checkout Refiners section end-->
+
+      <!--AirDrop Section End-->
+
     </main>
   </main>
     <!--Main page content end-->
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- To Top Smoooth Scroll Button Start!-->
+
+    ​<script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 50) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      
+      </script>
+
+    <!-- To Top Smoooth Scroll Button End!-->
+
   </body>
 </html>
