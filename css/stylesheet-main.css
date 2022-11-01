@@ -581,7 +581,7 @@ li a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr 4fr;
   justify-content: space-evenly;
-  background-color: rgb(29, 43, 114, 0.3);
+  background-color: rgb(29, 43, 114);
   padding: 30px;
   margin: 50px 30px 50px 50px;
   border-radius: 3px;
