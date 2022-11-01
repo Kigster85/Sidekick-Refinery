@@ -48,7 +48,28 @@ p {
   color: rgb(255, 255, 255);
   max-width: 60ch;
 }
+/* to top button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #5c78a8; /* Set a background color */
+  color: azure; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  border: 2px solid azure;
+}
 
+#myBtn:hover {
+  background-color: rgb(0, 12, 31); /* Add a dark-grey background on hover */
+}
+/* end of to top button */
 /* The start of the side naviagtion CSS */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -271,7 +292,7 @@ li a {
  
  /* description section start*/
  .description_section {
-   background-color: rgb(29, 43, 114, 0.3);
+   background-color: rgb(29, 43, 114, 1);
    padding: 30px;
    margin: 50px 50px 50px 30px;
    border-radius: 3px;
@@ -280,9 +301,7 @@ li a {
    justify-self: end;
  
  }
- .description_section:hover {
-   background-color: rgb(29, 43, 114, 0.4);
- }
+
  .description_section--stats {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -327,7 +346,7 @@ li a {
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr;
    justify-content: space-evenly;
-   background-color: rgb(29, 43, 114, 0.3);
+   background-color: rgb(29, 43, 114, 1);
    padding: 30px;
    margin: 50px 30px 50px 50px;
    border-radius: 3px;
@@ -336,10 +355,6 @@ li a {
    grid-column: 2;
    height: 200px;
    justify-self: start;
- }
- 
- .deposit_section:hover {
-   background-color: rgb(29, 43, 114, 0.4);
  }
  
  .deposit_h2 {
@@ -355,10 +370,10 @@ li a {
    border-top-left-radius: 3px;
    border-bottom-right-radius: 2px;
    border-bottom-left-radius: 25px;
-   border-bottom: 5px solid #1d2b72;
-   border-left: 5px solid #1d2b72;
-   border-top: 5px solid #1d2b72;
-   border-right: 3px solid #1d2b72;
+   border-bottom: 5px solid rgb(73, 226, 135, 1);
+   border-left: 5px solid rgb(73, 226, 135, 1);
+   border-top: 5px solid rgb(73, 226, 135, 1);
+   border-right: 3px solid rgb(73, 226, 135, 1);
    font-size: 20px;
    background-color: white;
    grid-column: 1 / span 3;
@@ -394,6 +409,10 @@ li a {
    cursor: pointer;
    background-color: #1d2b72;
    color: rgb(73, 226, 135, 1);
+   border-bottom: 5px solid rgb(73, 226, 135, 1);
+   border-left: 5px solid rgb(73, 226, 135, 1);
+   border-top: 5px solid rgb(73, 226, 135, 1);
+   border-right: 3px solid rgb(73, 226, 135, 1);
  }
  .max_btn:active {
    scale: 0.95;
@@ -478,7 +497,7 @@ li a {
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 2fr 2fr 2fr;
    justify-content: space-evenly;
-   background-color: rgb(29, 43, 114, 0.3);
+   background-color: rgb(29, 43, 114, 1);
    padding: 30px;
    margin: 20px 30px 50px 50px;
    border-radius: 3px;
@@ -488,9 +507,7 @@ li a {
    justify-self: start;
  }
  
- .wingman_section:hover {
-   background-color: rgb(29, 43, 114, 0.4);
- }
+
  
  .wingman_section-h2 {
    grid-row: 1;
@@ -583,7 +600,7 @@ li a {
 .air_drop_section{
   height: 100%;
   width: 95%;
-  background-color: rgb(29, 43, 114, 0.3);
+  background-color: rgb(29, 43, 114, 1);
   padding: 15px;
   grid-row: 4 / 6;
   justify-self: end;
