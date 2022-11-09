@@ -30,101 +30,16 @@
     <!--Left Side Navigation Start-->
 
     <nav id="mySidebar" class="sidenav">
-      
-      <div>
-        <button class="close_btn" title="Close Menu" onclick="closeNav()">close</button>
-      </div>
+      <button class="close_btn" title="Close Menu" onclick="closeNav()">close</button>
       
         <!--Left side Collapsable Menu-->
         <div>
-
-          <div>
-            <span class="sidebar_header"> SUPER TOOLS </span>
-            <ul>
-              <li>
-                <a class="nav_link_sidebar" href="">
-                  <span class="sidebar_icon">
-
-                  </span>
-                  <span>Headquarters</span>
-                  <span class="menu_right_chevron">></span>
-                </a>
-              </li>
-              <li>
-                <a class="nav_link_sidebar" href="">
-                  <span class="sidebar_icon">
-
-                  </span>
-                  <span>DefiWatcher</span>
-                  <span class="menu_right_chevron">></span>
-                </a>
-              </li>
-              <li>
-                <a class="nav_link_sidebar" href="">
-                  <span class="sidebar_icon">
-
-                  </span>
-                  <span>Team-Ups</span>
-                  <span class="menu_right_chevron">></span>
-                </a>
-              </li>
-            </ul>
-            </div>
-            <div>
-              <span class="sidebar_header"> SUPER FINANCES </span>
-              <ul>
-                <il>
-                  <a class="nav_link_sidebar" href="">
-                    <span class="sidebar_icon">
-  
-                    </span>
-                    <span>Staking</span>
-                    <span class="menu_right_chevron">></span>
-                  </a>
-                </il>
-                <li>
-                  <a class="nav_link_sidebar" href="">
-                    <span class="sidebar_icon">
-  
-                    </span>
-                    <span>Buy on PancakeSwap</span>
-                    <span class="menu_right_chevron">></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <span class="sidebar_header"> SUPER IDENTITY </span>
-              <ul>
-                <il>
-                  <a class="nav_link_sidebar" href="">
-                    <span class="sidebar_icon">
-  
-                    </span>
-                    <span>Profile</span>
-                    <span class="menu_right_chevron">></span>
-                  </a>
-                </il>
-                <li>
-                  <a class="nav_link_sidebar" href="">
-                    <span class="sidebar_icon">
-  
-                    </span>
-                    <span>Feedback</span>
-                    <span class="menu_right_chevron">></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <a class="nav_link_sidebar" href="">
-                <span class="sidebar_icon">
-
-                </span>
-                <span>SideKick Docs</span>
-                <span class="menu_right_chevron">></span>
-              </a>
-            </div>
+          <div><button class="sidenavbtn" title="Button 1 Tooltip">Button 1</button></div>
+          <div><button class="sidenavbtn" title="Button 2 Tooltip">Button 2</button></div> 
+          <div><button class="sidenavbtn" title="Button 3 Tooltip">Button 3</button></div>
+          <div><button class="sidenavbtn" title="Button 4 Tooltip">Button 4</button></div>
+          <div><button class="sidenavbtn" title="Button 5 Tooltip">Button 5</button></div>
+          <div><button class="sidenavbtn" title="Button 6 Tooltip">Button 6</button></div>
         </div>
     </nav>
     <!--Left Side Navigation End-->
@@ -134,42 +49,41 @@
     
     <!--Background Image with blur effect End-->
     <!--Main page content start-->
-    <div class="description_section--stats">
-      <div class="stat">
-        <h3>Available</h3>
-      </div>
-      <div class="stat">
-        <h3>Deposits</h3>
-      </div>
-      <div class="stat">
-        <h3>Claimed</h3>
-      </div>
-      <div class="stat">
-        <h3>Referral Rewards</h3>
-      </div>
-      <div class="stat">
-        <h3>Max Payout</h3>
-      </div>
-      <div class="stat">
-        <h3>Team</h3>
-      </div>
-      <div class="stat">
-        <h3>xSK Balance</h3>
-      </div>
-      <div class="stat">
-        <h3>Max Return</h3>
-      </div>
-    </div>
     <main id="top"class="main_page">
       <!--To Top Button Start-->
-      
+
       
       <!-- Description & stats start-->
       <section class="description_section">
         <!--To Top Button Start-->
         <a href="#top"><button id="myBtn" title="Go to top">Top</button></a>
         <!--To Top Button End-->
-
+        <div class="description_section--stats">
+          <div class="stat">
+            <h3>Available</h3>
+          </div>
+          <div class="stat">
+            <h3>Deposits</h3>
+          </div>
+          <div class="stat">
+            <h3>Claimed</h3>
+          </div>
+          <div class="stat">
+            <h3>Referral Rewards</h3>
+          </div>
+          <div class="stat">
+            <h3>Max Payout</h3>
+          </div>
+          <div class="stat">
+            <h3>Team</h3>
+          </div>
+          <div class="stat">
+            <h3>xSK Balance</h3>
+          </div>
+          <div class="stat">
+            <h3>xHNW Balance</h3>
+          </div>
+        </div>
         <p class="description__p">
           The Refinery is an open-ended blockchain CD that allows you to deposit
           and compound HFUEL tokens daily. By holding xSK, you can
@@ -193,6 +107,7 @@
       <!-- Description & stats end-->
       <!--Deposit start-->
       <section class="deposit_section">
+        <!--<div>-->
         <h2 class="deposit_h2">DEPOSIT</h2>
         <p class="deposit_amount-p">Amount</p>
         <p class="deposit_balance-p">Hfuel Balance:</p>
@@ -201,6 +116,7 @@
         <button class="approve_btn" title="Approve">Approve</button>
         <button class="refuel_btn" title="Refuel">Refuel</button>
         <button class="claim_btn" title="Claim">Claim</button>
+        <!--</div>-->
       </section>
       <!--Deposit end-->
       <!--Wingman section start-->
@@ -361,7 +277,7 @@
 
             <h3>Budget</h3>
             <input type="text" name="FUEL" placeholder="Fuel">
-            <span>Available: N/A HFuel</span>
+            <span>Available: N/A Fuel</span>
             <span>Number of recipients:</span>
             <span>Estimated Fuel per person: N/A</span>
             <button class="air_drop_btn" title="Run">Run</button>
@@ -389,7 +305,7 @@
             <h3>Player</h3>
             <input type="text" name="Player Address" placeholder="Player Address">
             <h3>Amount</h3>
-            <h3>Available: N/A HFuel</h3>
+            <h3>Available: N/A Fuel</h3>
             <input type="number" min="0" name="Amount to Send" placeholder="Amount to Send">
           </section>
 

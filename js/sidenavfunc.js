@@ -3,5 +3,5 @@ function openNav() {
   }
 
   function closeNav() {
-    document.getElementById("mySidebar").style.left = "-320px";
+    document.getElementById("mySidebar").style.left = "-255px";
   }
