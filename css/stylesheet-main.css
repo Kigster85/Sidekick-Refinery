@@ -1,3 +1,8 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+
+
 /* Main Website Style Guide*/
 * {
   padding: 0px;
@@ -16,6 +21,7 @@ body {
   padding: 0px;
   margin: 0px;
   height: 100%;
+  font-family: Rubik;
 }
 /*Font settings for entire Site*/
 h1,
@@ -24,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ffffff;
+  color: rgb(3, 8, 45);
   max-width: 60ch;
   line-height: 1.1;
 }
@@ -73,36 +79,37 @@ p {
 /* The start of the side naviagtion CSS */
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 250px; /* 0 width - change this with JavaScript */
+  width: 320px; /* 0 width - change this with JavaScript */
+  flex-direction: column;
+  display: flex;
   position: fixed; /* Stay in place */
-  background-color: #03082d; /* Black*/
+  background-color: #1d2b72; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
+  transition: all .5s cubic-bezier(.685,.0473,.346,1);
   transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
   transition-timing-function: ease-in-out;
   animation: fadeIn ease 1s;
   z-index: 11;
-  border-right: 3px solid #ffd039;
   top: 0;
-  left: -255px;
+  left: -320px;
 }
 /* The side navigaion links */
 .sidenavbtn {
   text-decoration: none;
   font-size: 25px;
-  background-color: #2ebc7f;
-  color: #03082d;
+  background-color: rgb(29, 43, 114, 1);
+  color: #ffffffa9;
   display: block;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
   scroll-behavior: smooth;
-  border: 2px solid #03082d;
   width: 100%;
 }
 /* When you mouse over the navigation links, change their color */
 .sidenavbtn:hover {
   color: #2ebc7f;
-  background-color: rgb(29, 43, 114, 0.3);
+  background: rgb(29, 43, 114, 0.3);
   border-top: 2px solid #ffd039;
   border-bottom: 2px solid #ffd039;
   cursor: pointer;
@@ -119,25 +126,40 @@ p {
   white-space: nowrap;
   font-weight: 700;
   text-decoration: none;
+  width:100%;
+  color:#ffffffa6;
+  background-color: rgb(29, 43, 114, 1);
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.nav_link_sidebar:hover {
   color: #ffffff;
   cursor: pointer;
-  background-color: #ced8f770;
+  background-color: rgba(7,9,25,.15);
+}
+.sidebar_header{
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+  margin: 1.5rem;
+  color: hsla(0,0%,100%,.35);
 }
 /* List Style SideBar */
-li {
-  background-color: #03082d;
-}
-ul {
-  background-color: #ddddddfd;
+
+.sidenav ul li > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 44px;
+  padding: 0 1.5rem;
+  font-size: 1.06rem;
+  white-space: nowrap;
+  font-weight: 700;
 }
 a {
   display: inline-block;
   padding: 10px;
-  background-color: #07010100;
 }
 li a {
   display: inline-block;
@@ -149,7 +171,7 @@ li a {
 .openbtn {
   font-size: 32px;
   cursor: pointer;
-  background-color: #03082d;
+  background-color: rgb(29, 43, 114, 1);
   color: #ffffff;
   border: none;
   margin-top: 2vh;
@@ -163,7 +185,7 @@ li a {
 /* button to close the sidebar */
 .close_btn {
   border-style: none;
-  background-color: transparent;
+  background-color: rgb(29, 43, 114, 1);
   color: rgb(73, 226, 135, 0.8);
   float: right;
   padding: 10px;
@@ -183,13 +205,14 @@ li a {
   background-color: rgb(255, 208, 57, 1);
   font-size: 15px;
   color: rgb(29, 43, 114, 1);
-  border-radius: 25px;
+  border-radius: 6px;
   padding: 5px 10px 5px 10px;
   font-weight: bold;
   max-width: 166px;
   margin-right: 2vw;
   margin-top: 3vh;
   word-wrap: break-word;
+  
 }
 .connect_btn:hover {
   background-color: rgb(29, 43, 114, 0.5);
@@ -205,13 +228,12 @@ li a {
 }
 
 .topnav {
-  background-color: #03082d;
+  background-color: rgb(29, 43, 114, 1);
   width: 100%;
-  border-bottom: 4px solid #ffd039;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  height: 9vh;
+  height: 78px;
   position: fixed;
   z-index: 10;
 }
@@ -231,7 +253,7 @@ li a {
 }
 
 .headerimg {
-  max-height: 9vh;
+  max-height: 78px;
   max-width: 20vw;
   text-align: center;
 }
@@ -239,9 +261,9 @@ li a {
   position: relative;
   margin-left: 25%;
 }
-
-.bgimg {
-  /*background-color: rgba(46, 188, 127, 1);*/
+/* Background image CSS */
+/*.bgimg {
+  background-color: rgba(46, 188, 127, 1);
   background-image: url(../img/bgimg/Logo_mark_blue@3x.png);
   background-blend-mode: hard-light;
   background-repeat: no-repeat;
@@ -268,21 +290,21 @@ li a {
   opacity: 0.6;
   z-index: -1;
 }
-
 .mainbgimg {
   background-color: rgba(40, 104, 51, 0.589);
   background-image: url(/img/bgimg/Logo_mark_black@3x.png);
   background-blend-mode: hard-light;
   background-repeat: no-repeat;
   background-size: 100%, 100%, cover;
-}
+}*/
+
 /* main content start*/
 .main_page {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 3fr 4fr;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 300px;
   width: 100%;
 }
 
@@ -292,18 +314,23 @@ li a {
   padding: 30px;
   margin: 50px 50px 50px 30px;
   border-radius: 3px;
-  width: 500px;
+  width: 80%;
   grid-row: 1 / 4;
   justify-self: end;
 }
 
 .description_section--stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
   justify-content: space-evenly;
   align-content: space-evenly;
-  margin-bottom: 20px;
+  padding: 34px;
+  background: rgb(29,43,114);
+  background: linear-gradient(180deg, rgba(29,43,114,1) 29%, rgba(3,8,45,1) 100%);
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 75px;
 }
 .description__p {
   margin: 10px 15px 10px 25px;
@@ -313,12 +340,11 @@ li a {
 }
 .stat {
   height: 150px;
-  width: 200px;
+  width: 7%;
   text-align: center;
-  background-color: rgb(3, 8, 45, 0.3);
-  justify-self: center;
+  color: rgb(3, 8, 45);
+  background-color: #ffffff;
   padding-top: 10px;
-  margin-top: 20px;
   border-radius: 3px;
 }
 .contract_addresses-container {
@@ -341,17 +367,24 @@ li a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  margin: 50px 30px 50px 50px;
+  border-radius: 3px;
+  width: 60%;
+  text-align: center;
+  grid-column: 2;
+  height: 50%;
+  justify-self: start;
+}
+.deposit_bg{
   background-color: rgb(29, 43, 114, 1);
   padding: 30px;
   margin: 50px 30px 50px 50px;
   border-radius: 3px;
-  width: 500px;
-  text-align: center;
-  grid-column: 2;
-  height: 200px;
-  justify-self: start;
+  width: 100%;
+  
 }
-
 .deposit_h2 {
   grid-column: 1;
   justify-self: center;
@@ -365,10 +398,10 @@ li a {
   border-top-left-radius: 3px;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 25px;
-  border-bottom: 5px solid rgb(73, 226, 135, 1);
-  border-left: 5px solid rgb(73, 226, 135, 1);
-  border-top: 5px solid rgb(73, 226, 135, 1);
-  border-right: 3px solid rgb(73, 226, 135, 1);
+  border-bottom: 5px solid #1d2b72;
+  border-left: 5px solid #1d2b72;
+  border-top: 5px solid #1d2b72;
+  border-right: 3px solid #1d2b72;
   font-size: 20px;
   background-color: white;
   grid-column: 1 / span 3;
