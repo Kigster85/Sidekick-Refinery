@@ -129,8 +129,6 @@
     </nav>
     <!--Left Side Navigation End-->
     
-    <!--Background Image with blur effect Start-->
-    <main class="bgimg"></main></main>
     
     <!--Background Image with blur effect End-->
     <!--Main page content start-->
@@ -165,26 +163,26 @@
       
       
       <!-- Description & stats start-->
-      <section class="description_section">
+      <section class="container">
         <!--To Top Button Start-->
         <a href="#top"><button id="myBtn" title="Go to top">Top</button></a>
         <!--To Top Button End-->
 
-        <p class="description__p">
+        <p>
           The Refinery is an open-ended blockchain CD that allows you to deposit
           and compound HFUEL tokens daily. By holding xSK, you can
           increase your daily payout percentage and the total rewards you can
           earn, while also earning from transaction fees of SK.
         </p>
         <div class="contract_addresses-container">
-          <p class="contract_address">
+          <p >
             HFUEL Contract Address: 0x157Ba4bBbb2bd7D59024143C2C9E08f6060717a6
           </p>
-          <p class="contract_address">
+          <p >
             xHNW Token Contract Address:
             0xaF4f67A1ed4fB3952ae3dF84ac2ca190E37a43F1
           </p>
-          <p class="contract_address">
+          <p >
             xSK Token Contract Address:
             0xA74Ce0F84d3F6dF9DAe2967a8Cfa645bF6693195
           </p>
@@ -192,24 +190,24 @@
       </section>
       <!-- Description & stats end-->
       <!--Deposit start-->
-      <section class="deposit_section">
-        <h2 class="deposit_h2">DEPOSIT</h2>
+      <section class="container deposit_section">
+        <h2>DEPOSIT</h2>
         <p class="deposit_amount-p">Amount</p>
         <p class="deposit_balance-p">Hfuel Balance:</p>
-        <input class="deposit_input" type="text" placeholder="HFUEL" />
-        <button class="max_btn" title="Max Amount">MAX</button>
-        <button class="approve_btn" title="Approve">Approve</button>
-        <button class="refuel_btn" title="Refuel">Refuel</button>
-        <button class="claim_btn" title="Claim">Claim</button>
+        <input class="user_input deposit_input" type="text" placeholder="HFUEL" />
+        <button class="depo_btn max_btn" title="Max Amount">MAX</button>
+        <button class="green-yellow_btn approve_btn" title="Approve">Approve</button>
+        <button class="green-yellow_btn refuel_btn" title="Refuel">Refuel</button>
+        <button class="green-yellow_btn claim_btn" title="Claim">Claim</button>
       </section>
       <!--Deposit end-->
       <!--Wingman section start-->
-      <section class="wingman_section">
+      <section class="container wingman_section">
         <h2 class="wingman_section-h2">GET A WINGMAN</h2>
         <div class="wingman_section-lookup">
           <h3>Wingman Lookup</h3>
           <input
-            class="wingman_section-input"
+            class="user_input"
             type="text"
             placeholder="Wingman Address"
           />
@@ -222,22 +220,22 @@
           <p>Inactivity Threshold:</p>
           <p>0</p>
         </div>
-        <button class="wingman_section-updateBtn" title="Update">Update</button>
-        <button class="wingman_section-supportBtn" title="Support Marketing">Support Marketing</button>
+        <button class="green-blue_btn wingman_section-updateBtn" title="Update">Update</button>
+        <button class="green-blue_btn wingman_section-supportBtn" title="Support Marketing">Support Marketing</button>
       </section>
       <!--Wingman section end-->
 
       <!--Checkout Refiners section start-->
-      <section class="checkoutRefiners_section">
+      <section class="container checkoutRefiners_section">
         <h2 class="checkoutRefiners_section-h2">CHECKOUT REFINERS</h2>
         <div class="checkoutRefiners_section-playerLookup">
           <h3 class="checkoutRefiners_section-playerLookupH3">Player Lookup</h3>
           <input
-            class="checkoutRefiners_section-input"
+            class="user_input checkoutRefiners_section-input"
             type="text"
             placeholder="Player Address"
           />
-          <button class="checkoutRefiners_section-searchBtn">Search</button>
+          <button class="depo_btn checkoutRefiners_section-searchBtn">Search</button>
         </div>
         <div class="checkoutRefiners_section-playerInfo">
           <h3>Player Info</h3>
@@ -259,41 +257,45 @@
 
       <!--AirDrop Section Start-->
 
-      <section class="air_drop_section">
+      <section class="container air_drop_section">
 
         <!--Horizontal Navigation Buttons Start-->
 
-        <div>
-          <button class="air_drop_btn" title="Team Viewer">Team Viewer</button>
-          <button class="air_drop_btn" title="Team Airdrop">Team Airdrop</button>
-          <button class="air_drop_btn" title="Direct Airdrop">Direct Airdrop</button>
+        <div class="airdrop-section_btns">
+          <button class="air_drop_tab_btn_active" title="Team Viewer">Team Viewer</button>
+          <button class="air_drop_tab_btn" title="Team Airdrop">Team Airdrop</button>
+          <button class="air_drop_tab_btn" title="Direct Airdrop">Direct Airdrop</button>
         </div>
 
         <!--Horizontal Navigation Buttons End-->
 
         <!--Team Viewer Content Section Start-->
 
-          <section id="airdrop1" class="team_viewer_content">
+          <section id="airdrop1" class="active airdrop_sections">
             <h2>Player</h2>
-            <input type="text" name="Player Address" placeholder="Player Address">
-            <button class="air_drop_btn" title="Show">Show</button>
-            <button class="air_drop_btn" title="Use My Address">Use My Address</button>
-            <button class="air_drop_btn" title="View All">View All</button>
+            <input class="player-address_input user_input " type="text" name="Player Address" placeholder="Player Address">
+            </br>
+            <div class="RHS_btns">
+            <button class="air_drop_btn green-yellow_btn" title="Use My Address">Use My Address</button>
+            <button class="air_drop_btn green-yellow_btn" title="View All">View All</button>
+            </div>
+            </br>
+            <button class="air_drop_btn green-yellow_btn" title="Show">Show</button>
           </section>
 
         <!--Team Viewer Content Section End-->
 
         <!--Team Airdrop Content Section Start-->
 
-          <section id="airdrop2" class="team_airdrop_section">
+          <section id="airdrop2" class="inactive airdrop_sections team_airdrop_section">
             <h2>Player</h2>
-            <input type="text" name="Player Address" placeholder="Player Address">
+            <input class="user_input" type="text" name="Player Address" placeholder="Player Address">
             <button class="air_drop_btn" title="Use My Address">Use My Address</button>
             <h3>Campaign</h3>
 
             <!--Dropdown list settings Start-->
 
-            <select class="dropdown_lists">
+            <select class="depo_btn dropdown_lists">
               <option value="Divide budget between all matching players">Divide budget between all matching players</option>
               <option value="Divide budget to 1 matching player">Divide budget to 1 matching player*</option>
               <option value="Divide budget across 3 matching players">Divide budget across 3 matching players*</option>
@@ -311,7 +313,7 @@
 
             <!--Dropdown list settings Start-->
 
-            <select class="dropdown_lists">
+            <select class="depo_btn dropdown_lists">
               <option value="None">None</option>
               <option value="1">1</option>
               <option value="5">5</option>
@@ -324,7 +326,7 @@
 
             <!--Dropdown list settings Start-->
 
-            <select class="dropdown_lists">
+            <select class="depo_btn dropdown_lists">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="5">5</option>
@@ -339,7 +341,7 @@
 
             <!--Dropdown list settings Start-->
 
-            <select class="dropdown_lists">
+            <select class="depo_btn dropdown_lists">
               <option value="1">1+</option>
               <option value="50+">50+</option>
               <option value="100+">100+</option>
@@ -378,19 +380,22 @@
             <input type="checkbox">
             <hr>
             <span>No Data</span>
+          </section>
 
         <!--Team Airdrop Content Section End-->   
         
         <!--Direct Airdrop Content Section Start-->  
 
-          </section>
-          <section id="airdrop3" class="direct_airdrop">
+          
+          <section id="airdrop3" class="inactive airdrop_sections direct_airdrop">
             <h2>Direct Airdrop</h2>
             <h3>Player</h3>
             <input type="text" name="Player Address" placeholder="Player Address">
             <h3>Amount</h3>
             <h3>Available: N/A HFuel</h3>
             <input type="number" min="0" name="Amount to Send" placeholder="Amount to Send">
+            <button class="air_drop_btn" title="Send">Send</button>
+
           </section>
 
         <!--Direct Airdrop Content Section End-->         
