@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/animations.css" />
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/sidenavfunc.js"></script>
+    <script src="js/airdrop_nav_func.js"></script>
   </head>
   <body>
     <header class="topnav">
@@ -262,16 +263,16 @@
         <!--Horizontal Navigation Buttons Start-->
 
         <div class="airdrop-section_btns">
-          <button class="air_drop_tab_btn_active" title="Team Viewer">Team Viewer</button>
-          <button class="air_drop_tab_btn" title="Team Airdrop">Team Airdrop</button>
-          <button class="air_drop_tab_btn" title="Direct Airdrop">Direct Airdrop</button>
+          <button class="air_drop_tab_btn" onclick="airdrop_Tab('airdrop1')" id="defaultOpen" title="Team Viewer">Team Viewer</button>
+          <button class="air_drop_tab_btn" onclick="airdrop_Tab('airdrop2')" title="Team Airdrop">Team Airdrop</button>
+          <button class="air_drop_tab_btn" onclick="airdrop_Tab('airdrop3')" title="Direct Airdrop">Direct Airdrop</button>
         </div>
 
         <!--Horizontal Navigation Buttons End-->
 
         <!--Team Viewer Content Section Start-->
 
-          <section id="airdrop1" class="active airdrop_sections">
+          <section id="airdrop1" class="airdrop_sections active">
             <h2>Player</h2>
             <input class="player-address_input user_input " type="text" name="Player Address" placeholder="Player Address">
             </br>
@@ -287,7 +288,7 @@
 
         <!--Team Airdrop Content Section Start-->
 
-          <section id="airdrop2" class="inactive airdrop_sections team_airdrop_section">
+          <section id="airdrop2" class="airdrop_sections team_airdrop_section">
             <h2>Player</h2>
             <input class="user_input" type="text" name="Player Address" placeholder="Player Address">
             <button class="air_drop_btn" title="Use My Address">Use My Address</button>
@@ -387,7 +388,7 @@
         <!--Direct Airdrop Content Section Start-->  
 
           
-          <section id="airdrop3" class="inactive airdrop_sections direct_airdrop">
+          <section id="airdrop3" class="airdrop_sections direct_airdrop">
             <h2>Direct Airdrop</h2>
             <h3>Player</h3>
             <input type="text" name="Player Address" placeholder="Player Address">
@@ -453,10 +454,20 @@
         document.documentElement.scrollTop = 0;
       }
 
-      
+
       </script>
 
     <!-- To Top Smoooth Scroll Button End!-->
+    <!-- Load default Airdrop Tab Start-->
+    <script>
+
+      $(document).ready(function(){
+          document.getElementById("defaultOpen").click();
+         // document.getElementById("defaultOpen").classList.toggle("air_drop_tab_btn");
+      });
+
+  </script>
+      <!-- Load default Airdrop Tab End-->
 
   </body>
 </html>

@@ -604,6 +604,7 @@ opacity: 0.8;
   border-radius: 3px;
   margin-top: -25px;
   padding: 5px;
+
 }
 
 .player-address_input {
@@ -630,6 +631,8 @@ opacity: 0.8;
   background-color:  #1d2b72;
   justify-self: center;
   opacity: 0.6;
+  border-right: #000c1f 2px solid; 
+
 }
 .air_drop_tab_btn:hover{
   cursor: pointer;
@@ -638,7 +641,6 @@ opacity: 0.8;
   opacity: 0.6;
   border-left:#000c1f 2px solid;
   border-top:#000c1f 2px solid;
-  border-right: #000c1f 2px solid; 
 
 }
 .air_drop_tab_btn_active{
@@ -668,7 +670,7 @@ opacity: 0.8;
 }
 
 .active {
-  display: visible;
+  display:block;
 }
 
 .inactive {
