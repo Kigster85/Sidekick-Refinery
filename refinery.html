@@ -262,8 +262,8 @@
 
         <!--Horizontal Navigation Buttons Start-->
 
-        <div class="airdrop-section_btns">
-          <button class="air_drop_tab_btn" onclick="airdrop_Tab('airdrop1')" id="defaultOpen" title="Team Viewer">Team Viewer</button>
+        <div id="airdropBTNS" >
+          <button class="air_drop_tab_btn active" onclick="airdrop_Tab('airdrop1')" id="defaultOpen" title="Team Viewer">Team Viewer</button>
           <button class="air_drop_tab_btn" onclick="airdrop_Tab('airdrop2')" title="Team Airdrop">Team Airdrop</button>
           <button class="air_drop_tab_btn" onclick="airdrop_Tab('airdrop3')" title="Direct Airdrop">Direct Airdrop</button>
         </div>
@@ -272,7 +272,7 @@
 
         <!--Team Viewer Content Section Start-->
 
-          <section id="airdrop1" class="airdrop_sections active">
+          <section id="airdrop1" class="airdrop_sections">
             <h2>Player</h2>
             <input class="player-address_input user_input " type="text" name="Player Address" placeholder="Player Address">
             </br>

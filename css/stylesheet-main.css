@@ -643,7 +643,7 @@ opacity: 0.8;
   border-top:#000c1f 2px solid;
 
 }
-.air_drop_tab_btn_active{
+.active, .air_drop_tab_btn:hover{
   opacity: 1;
   background-color: rgb(73, 226, 135, 1);
   color: #1d2b72;
@@ -669,9 +669,9 @@ opacity: 0.8;
   width: auto;
 }
 
-.active {
+/*.active {
   display:block;
-}
+}*/
 
 .inactive {
   display: none;
