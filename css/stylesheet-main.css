@@ -1,8 +1,6 @@
 /* Imports */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 
-
-
 /* Main Website Style Guide*/
 * {
   padding: 0px;
@@ -64,7 +62,7 @@ p {
   z-index: 99; /* Make sure it does not overlap */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
-  border-radius: .75rem; /* Rounded corners */
+  border-radius: 0.75rem; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   border: 2px solid #1d2b72;
   padding: 10px 24px;
@@ -80,9 +78,9 @@ p {
   color: rgb(73, 226, 135, 1);
   border: 2px solid rgb(73, 226, 135, 1);
 }
-.top{
-  padding:0px;
-  margin:0px;
+.top {
+  padding: 0px;
+  margin: 0px;
 }
 /* end of to top button */
 /* The start of the side naviagtion CSS */
@@ -95,7 +93,7 @@ p {
   background-color: #1d2b72; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
-  transition: all .5s cubic-bezier(.685,.0473,.346,1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
   transition-timing-function: ease-in-out;
   animation: fadeIn ease 1s;
@@ -135,8 +133,8 @@ p {
   white-space: nowrap;
   font-weight: 700;
   text-decoration: none;
-  width:100%;
-  color:#ffffffa6;
+  width: 100%;
+  color: #ffffffa6;
   background-color: rgb(29, 43, 114, 1);
 }
 
@@ -144,14 +142,14 @@ p {
 .nav_link_sidebar:hover {
   color: #ffffff;
   cursor: pointer;
-  background-color: rgba(7,9,25,.15);
+  background-color: rgba(7, 9, 25, 0.15);
 }
-.sidebar_header{
+.sidebar_header {
   padding-top: 0;
   padding-bottom: 0;
   height: 0;
   margin: 1.5rem;
-  color: hsla(0,0%,100%,.35);
+  color: hsla(0, 0%, 100%, 0.35);
 }
 /* List Style SideBar */
 
@@ -215,14 +213,13 @@ li a {
   font-size: 15px;
   color: rgb(29, 43, 114, 1);
   border: solid 2px rgb(255, 208, 57, 1);
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   padding: 5px 10px 5px 10px;
   font-weight: bold;
   max-width: 166px;
   margin-right: 2vw;
   margin-top: 3vh;
   word-wrap: break-word;
-  
 }
 .connect_btn:hover {
   background-color: rgb(29, 43, 114, 0.5);
@@ -281,13 +278,12 @@ li a {
   grid-template-rows: repeat(2, auto);
   grid-auto-flow: row;
 }
-.container{
+.container {
   justify-content: space-evenly;
   background-color: rgb(255, 255, 255);
   padding: 30px;
   margin: 15px 15px 15px 15px;
-  border-radius: .75rem;
-
+  border-radius: 0.75rem;
 }
 
 /* description section start*/
@@ -301,7 +297,11 @@ li a {
 .description_section--stats {
   justify-content: center;
   align-content: center;
-  background: linear-gradient(180deg, rgba(29,43,114,1) 29%, rgba(3,8,45,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(29, 43, 114, 1) 29%,
+    rgba(3, 8, 45, 1) 100%
+  );
   position: fixed;
   z-index: 9;
   width: 100%;
@@ -318,7 +318,7 @@ li a {
   margin: 10px 15px 10px 25px;
   padding: 15px 15px 15px 15px;
   background-color: rgb(3, 8, 45, 0.3);
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 .stat {
   height: 110px;
@@ -327,8 +327,7 @@ li a {
   color: rgb(3, 8, 45);
   background-color: #ffffff;
   padding-top: 10px;
-  border-radius: .75rem;
-
+  border-radius: 0.75rem;
 }
 .contract_addresses-container {
   margin-left: 30px;
@@ -343,21 +342,24 @@ li a {
 .deposit_section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   text-align: center;
   grid-column: 2;
   height: 40%;
 }
-.deposit_bg{
+.deposit_bg {
   padding: 30px;
   margin: 50px 30px 50px 50px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   width: 100%;
-  
 }
 .deposit_h2 {
   grid-column: 1;
-  justify-self: center;
+  text-align: start;
+}
+.deposit_amount-h4 {
+}
+.deposit_balance-h4 {
 }
 /*Amount & Hfuel Balance CSS to go here...*/
 .user_input {
@@ -379,11 +381,15 @@ li a {
 }
 
 .deposit_input {
-  grid-column: 1 / span 3;
+  grid-column: 1/4;
   grid-row: 2;
   z-index: 1;
+  height: 50px;
+  width: 100%;
+  justify-self: start;
+  margin-top: 20px;
 }
-.depo_btn{
+.depo_btn {
   height: 50px;
   width: 125px;
   text-align: center;
@@ -418,44 +424,69 @@ li a {
 
 .max_btn {
   grid-row: 2;
-  grid-column-start: 3;
-  grid-column-end: 3;
+  grid-column: 3/5;
+  justify-self: center;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.deposit_component {
+  display: grid;
+  grid-row: 2;
+  grid-column: 1/3;
+  grid-template-columns: repeat(4, 50%);
+  grid-template-rows: repeat(2, auto);
+  justify-self: center;
 }
 
 .blue-yellow_btn {
   padding: 10px 24px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   border-style: none;
   margin: 10px;
   font-size: 15px;
   font-weight: bold;
   color: #1d2b72;
   background-color: rgb(255, 208, 57, 1);
-   justify-self: center;
+  justify-self: center;
 }
 
 .blue-yellow_btn:hover {
-cursor: pointer;
+  cursor: pointer;
   color: rgb(255, 208, 57, 1);
   background-color: #1d2b72;
 }
 .blue-yellow_btn:active {
-opacity: 0.8;
+  opacity: 0.8;
 }
 
-.approve_btn {
+.deposit_btn {
+  margin-top: 50px;
   grid-column: 1;
   grid-row: 3;
+  justify-self: end;
+  height: 60%;
+  width: 90%;
+  font-size: 25px;
 }
 
 .refuel_btn {
+  margin-top: 50px;
   grid-column: 2;
   grid-row: 3;
+  height: 60%;
+  width: 90%;
+  font-size: 25px;
 }
 
 .claim_btn {
+  margin-top: 50px;
   grid-column: 3;
   grid-row: 3;
+  justify-self: start;
+  height: 60%;
+  width: 90%;
+  font-size: 25px;
 }
 
 /* deposit section end */
@@ -470,9 +501,8 @@ opacity: 0.8;
   justify-content: space-evenly;
   padding: 30px;
   margin: 0px 30px 50px 50px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   text-align: center;
-
 }
 
 .wingman_section-h2 {
@@ -485,7 +515,7 @@ opacity: 0.8;
   border: 2px solid rgb(3, 8, 45, 0.3);
   justify-self: center;
   padding: 10px 10px 10px 10px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   grid-row: 2;
   grid-column: 1 / span 2;
 }
@@ -494,11 +524,11 @@ opacity: 0.8;
   grid-column: 1/3;
   margin: 20px 50px 20px 50px;
   padding: 15px 15px 15px 15px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 .green-blue_btn {
   padding: 10px 24px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   border-style: none;
   margin: 10px;
   font-size: 15px;
@@ -515,15 +545,13 @@ opacity: 0.8;
 }
 
 .green-blue_btn:active {
- opacity: 0.8;
+  opacity: 0.8;
 }
 
 .wingman_section-updateBtn {
   grid-row: 4;
   grid-column: 1;
-  
 }
-
 
 .wingman_section-supportBtn {
   grid-row: 4;
@@ -540,7 +568,7 @@ opacity: 0.8;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr 4fr;
   justify-content: space-evenly;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   text-align: center;
   padding: 15px;
 }
@@ -573,7 +601,6 @@ opacity: 0.8;
 .checkoutRefiners_section-playerInfo {
   grid-row: 3;
   grid-column: 1/3;
-
 }
 /*Checkout Refiners section end*/
 
@@ -594,8 +621,8 @@ opacity: 0.8;
 
 .airdrop_sections {
   grid-column: 1/3;
-  border:#000c1f 2px solid;
-  border-radius: .75rem;
+  border: #000c1f 2px solid;
+  border-radius: 0.75rem;
   margin-top: -5px;
   padding: 5px;
   z-index: 1;
@@ -609,49 +636,49 @@ opacity: 0.8;
 
 .air_drop_btn {
   padding: 10px 24px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   margin: 10px;
   font-size: 15px;
   font-weight: bold;
   justify-self: center;
   opacity: 1;
 }
-.air_drop_tab_btn{
+.air_drop_tab_btn {
   padding: 12px 25px;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   border-style: none;
   margin: -3px -2px -3px -5px;
   font-size: 15px;
   font-weight: bold;
   color: rgb(73, 226, 135, 1);
-  background-color:  #1d2b72;
+  background-color: #1d2b72;
   justify-self: center;
   opacity: 1;
-  border-right: #000c1f 2px solid; 
-
+  border-right: #000c1f 2px solid;
 }
 
-.active, .air_drop_tab_btn:hover{
+.active,
+.air_drop_tab_btn:hover {
   opacity: 1;
   background-color: rgb(73, 226, 135, 1);
   color: #1d2b72;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   border-style: none;
   margin: -3px -2px -3px -5px;
   font-size: 18px;
   font-weight: bold;
   justify-self: center;
-  border-left:#000c1f 2px solid;
-  border-top:#000c1f 2px solid;
-  border-right: #000c1f 2px solid; 
+  border-left: #000c1f 2px solid;
+  border-top: #000c1f 2px solid;
+  border-right: #000c1f 2px solid;
   scale: 100% 100%;
   transition: ease-in-out 0.5sec;
   cursor: pointer;
 }
-.adTabNavBtns{
-  margin-left:20px;
-  z-index:0;
-  margin-top:5px;
+.adTabNavBtns {
+  margin-left: 20px;
+  z-index: 0;
+  margin-top: 5px;
   position: relative;
 }
 .RHS_btns {
@@ -663,12 +690,10 @@ opacity: 0.8;
   width: auto;
   text-decoration: none;
   font-size: 25px;
-  background-color: #ffffffa9 ;
-  color:rgb(29, 43, 114, 1);
+  background-color: #ffffffa9;
+  color: rgb(29, 43, 114, 1);
   display: block;
   width: 100%;
   border: 3px solid rgb(29, 43, 114, 0.5);
   cursor: pointer;
 }
-
-
