@@ -134,6 +134,8 @@
     <!--Background Image with blur effect End-->
     <!--Main page content start-->
     <div class="description_section--stats">
+      <a class="top"href="#top"><button id="myBtn" title="Go to top">Top</button></a>
+
       <div class="stat">
         <h3>Available</h3>
       </div>
@@ -166,7 +168,6 @@
       <!-- Description & stats start-->
       <section class="container">
         <!--To Top Button Start-->
-        <a href="#top"><button id="myBtn" title="Go to top">Top</button></a>
         <!--To Top Button End-->
 
         <p>
@@ -191,15 +192,17 @@
       </section>
       <!-- Description & stats end-->
       <!--Deposit start-->
-      <section class="container deposit_section">
-        <h2>DEPOSIT</h2>
-        <p class="deposit_amount-p">Amount</p>
-        <p class="deposit_balance-p">Hfuel Balance:</p>
-        <input class="user_input deposit_input" type="text" placeholder="HFUEL" />
-        <button class="depo_btn max_btn" title="Max Amount">MAX</button>
-        <button class="green-yellow_btn approve_btn" title="Approve">Approve</button>
-        <button class="green-yellow_btn refuel_btn" title="Refuel">Refuel</button>
-        <button class="green-yellow_btn claim_btn" title="Claim">Claim</button>
+      <section class="container">
+        <div class=" deposit_section">
+          <h2>DEPOSIT</h2>
+          <p class="deposit_amount-p">Amount</p>
+          <p class="deposit_balance-p">Hfuel Balance:</p>
+          <input class="user_input deposit_input" type="text" placeholder="HFUEL" />
+          <button class="depo_btn max_btn" title="Max Amount">MAX</button>
+          <button class="green-yellow_btn approve_btn" title="Approve">Approve</button>
+          <button class="green-yellow_btn refuel_btn" title="Refuel">Refuel</button>
+          <button class="green-yellow_btn claim_btn" title="Claim">Claim</button>
+        </div>
       </section>
       <!--Deposit end-->
       <!--Wingman section start-->
@@ -450,8 +453,8 @@
       
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = -250;
+        document.documentElement.scrollTop = -250;
       }
 
 
