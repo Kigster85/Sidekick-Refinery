@@ -136,6 +136,7 @@
     <div class="description_section--stats">
       <a class="top"href="#top"><button id="myBtn" title="Go to top">Top</button></a>
 
+
       <div class="stat">
         <h3>Available</h3>
       </div>
@@ -161,9 +162,9 @@
         <h3>Max Return</h3>
       </div>
     </div>
+
     <main id="top"class="main_page">
       <!--To Top Button Start-->
-      
       
       <!-- Description & stats start-->
       <section class="container">
@@ -196,15 +197,16 @@
       <section class="container">
         <div class=" deposit_section">
           <h2 class="deposit_h2">DEPOSIT</h2>
+          <h3 class="deposit_balance-h4">xSK Balance: (display balance here)</h3>
           <div class="deposit_component">
-          <h4 class="deposit_amount-h4">Amount</h4>
-          <h4 class="deposit_balance-h4">Hfuel Balance:</h4>
-          <input class="user_input deposit_input" type="text" placeholder="HFUEL" />
-          <button class="depo_btn max_btn" title="Max Amount">MAX</button>
+            <input class="user_input deposit_input" type="text" placeholder="Enter Amount To Deposit" />
+            <button class="depo_btn max_btn" title="Max Amount">MAX</button>
           </div>
-          <button class="blue-yellow_btn deposit_btn" title="deposit">Deposit</button>
-          <button class="blue-yellow_btn refuel_btn" title="Refuel">Refuel</button>
-          <button class="blue-yellow_btn claim_btn" title="Claim">Claim</button>
+          <div class="DRC_Buttons_Grid">
+            <button class="blue-yellow_btn deposit_btn" title="deposit">Deposit</button>
+            <button class="blue-yellow_btn refuel_btn" title="Refuel">Refuel</button>
+            <button class="blue-yellow_btn claim_btn" title="Claim">Claim</button>
+          </div>
         </div>
       </section>
       <!--Deposit end-->
@@ -455,7 +457,7 @@
       window.onscroll = function() {scrollFunction()};
       
       function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
           mybutton.style.display = "block";
         } else {
           mybutton.style.display = "none";
@@ -464,8 +466,8 @@
       
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
-        document.body.scrollTop = -250;
-        document.documentElement.scrollTop = -250;
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
       }
 
 
