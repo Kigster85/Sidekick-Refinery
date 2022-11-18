@@ -398,9 +398,10 @@ li a {
   grid-row: 2;
   z-index: 1;
   height: 50px;
-  width: 100%;
-  justify-self: start;
+  width: 110%;
+  margin-left: 5%;
   margin-top: 20px;
+  text-align: center;
 }
 .depo_btn {
   height: 50px;
@@ -437,9 +438,8 @@ li a {
 
 .max_btn {
   grid-row: 2;
-  grid-column: 3/5;
-  justify-self: center;
-  margin-left: 50px;
+  grid-column: 4/5;
+  margin-left: 15%;
   margin-top: 20px;
 }
 
@@ -450,7 +450,6 @@ li a {
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(2, auto);
   justify-content: center;
-  margin-left: 150px;
 }
 
 .blue-yellow_btn {
