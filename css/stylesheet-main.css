@@ -7,7 +7,7 @@
   margin: 0px;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 header,
@@ -280,8 +280,6 @@ li a {
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, auto);
   grid-auto-flow: row;
-
-
 }
 .container {
   background-color: rgb(255, 255, 255);
@@ -294,7 +292,7 @@ li a {
 /* description section start*/
 .description_section {
   grid-template-columns: repeat(1, 100%);
-  grid-template-rows: repeat(2, 100%);
+  grid-template-rows: repeat(2, 50%);
   grid-auto-flow: row;
   display: grid;
 }
@@ -335,10 +333,18 @@ li a {
   border-radius: 0.75rem;
 }
 .contract_addresses-container {
-  margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-  width: 440px;
+  text-align: center;
+  margin: 40px 50px 10px 50px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 0.75rem;
+  background-color: rgb(29, 43, 114, 0.9);
+  width: fit-content;
+  justify-self: center;
+  align-self: flex-end;
+}
+.contract_addresses-container p {
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 /* description section end*/
@@ -352,7 +358,7 @@ li a {
   grid-column: 2;
   height: 40%;
 }
-.DRC_Buttons_Grid{
+.DRC_Buttons_Grid {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(2, auto);
@@ -547,7 +553,7 @@ li a {
   margin: 40px 50px 10px 50px;
   padding: 15px 15px 15px 15px;
   border-radius: 0.75rem;
-  background-color: rgb(29, 43, 114);
+  background-color: rgb(29, 43, 114, 0.9);
   width: fit-content;
   justify-self: center;
 }
