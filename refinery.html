@@ -282,13 +282,13 @@
         <!--Team Viewer Content Section Start-->
 
           <section id="airdrop1" class="airdrop_sections">
-            <h2 class="team-viewer_h2">Player</h2>
+            <h2 class="airdrop_h2">Player</h2>
             <input class="player-address_input user_input " type="text" name="Player Address" placeholder="Player Address">
             </br>
             <div class="RHS_btns">
-            <button class="air_drop_btn blue-yellow_btn" title="Use My Address">Use My Address</button>
-            <button class="air_drop_btn blue-yellow_btn" title="View All">View All</button>
-            <button class="air_drop_btn blue-yellow_btn" title="Show">Show</button>
+            <button class="air_drop_btn blue-yellow_btn teamViewer-useMyAddress_btn" title="Use My Address">Use My Address</button>
+            <button class="air_drop_btn blue-yellow_btn viewAll_btn" title="View All">View All</button>
+            <button class="air_drop_btn blue-yellow_btn show-btn" title="Show">Show</button>
             </div>
           </section>
 
@@ -297,9 +297,12 @@
         <!--Team Airdrop Content Section Start-->
 
           <section id="airdrop2" class="airdrop_sections team_airdrop_section">
-            <h2>Player</h2>
-            <input class="user_input" type="text" name="Player Address" placeholder="Player Address">
-            <button class="air_drop_btn blue-yellow_btn" title="Use My Address">Use My Address</button>
+            <h2 class="airdrop_h2">Player</h2>
+            <div class="input-component">
+            <input class="player-address_input user_input" type="text" name="Player Address" placeholder="Player Address">
+            <button class="air_drop_btn blue-yellow_btn teamAirdop-useMyAddress_btn" title="Use My Address">Use My Address</button>
+            </div>
+            <div class="teamAirdrop-optionComponents">
             <h3>Campaign</h3>
 
             <!--Dropdown list settings Start-->
@@ -319,6 +322,8 @@
             <!--Dropdown list settings End-->
 
             <span class="astrix_info">* Eligible matching players selected at random.</span>
+            </div>
+            <div class="teamAirdrop-optionComponents">
             <h3>Minimum directs</h3>
 
             <!--Dropdown list settings Start-->
@@ -332,6 +337,8 @@
             </select>
 
             <!--Dropdown list settings End-->
+            </div>
+            <div class="teamAirdrop-optionComponents">
 
             <h3>Team Depth</h3>
 
@@ -348,6 +355,8 @@
             </select>
 
             <!--Dropdown list settings End-->
+            </div>
+            <div class="teamAirdrop-optionComponents">
 
             <h3>Minimum Net Deposits</h3>
 
@@ -373,6 +382,7 @@
             </select>            
 
             <!--Dropdown list settings End-->
+            </div>
 
             <h3>Budget</h3>
             <input type="text" name="FUEL" placeholder="Fuel">

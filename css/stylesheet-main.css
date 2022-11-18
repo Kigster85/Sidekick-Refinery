@@ -704,27 +704,48 @@ li a {
   position: relative;
 }
 
-.team-viewer_h2 {
+.airdrop_h2 {
   margin-top: 1%;
   margin-left: 1%;
   margin-bottom: 1%;
 }
 
 .player-address_input {
-  width: 98%;
+  width: 99%;
 }
 
 .air_drop_btn {
   border-radius: 0.75rem;
   font-weight: bold;
   justify-self: center;
-  margin-top: 50px;
   height: 50%;
   width: 50%;
   font-size: 25px;
 }
-.use-my-address-btn {
+.teamViewer-useMyAddress_btn {
   justify-self: end;
+  margin-top: 50px;
+}
+.viewAll_btn {
+  margin-top: 50px;
+}
+.show-btn {
+  justify-self: start;
+  margin-top: 50px;
+}
+.input-component {
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: 1;
+}
+.teamAirdop-useMyAddress_btn {
+  width: 15%;
+  height: 75%;
+  justify-self: end;
+  align-self: center;
+}
+.teamAirdrop-optionComponents {
+  margin-bottom: 1%;
 }
 
 .air_drop_tab_btn {
