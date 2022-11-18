@@ -346,6 +346,7 @@ li a {
   text-align: center;
   grid-column: 2;
   height: 40%;
+  align-items: center;
 }
 .deposit_bg {
   padding: 30px;
@@ -358,8 +359,12 @@ li a {
   text-align: start;
 }
 .deposit_amount-h4 {
+  grid-row: 1;
+  grid-column: 1;
 }
 .deposit_balance-h4 {
+  grid-row: 1;
+  grid-column: 3;
 }
 /*Amount & Hfuel Balance CSS to go here...*/
 .user_input {
@@ -437,6 +442,7 @@ li a {
   grid-template-columns: repeat(4, 50%);
   grid-template-rows: repeat(2, auto);
   justify-self: center;
+  margin-top: 30px;
 }
 
 .blue-yellow_btn {
