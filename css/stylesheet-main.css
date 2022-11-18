@@ -376,10 +376,7 @@ li a {
   grid-column: 1;
   text-align: start;
 }
-.deposit_balance-h3 {
-  grid-row: 1;
-  grid-column: 3;
-}
+
 /*Amount & Hfuel Balance CSS to go here...*/
 .user_input {
   text-align: end;
