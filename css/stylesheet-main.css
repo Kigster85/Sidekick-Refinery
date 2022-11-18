@@ -79,7 +79,6 @@ p {
 #myBtn:hover {
   background-color: #1d2b72;
   color: rgb(73, 226, 135, 1);
-  border: 2px solid rgb(73, 226, 135, 1);
   transition: all .2s ease-in-out;
 }
 .top {
@@ -443,10 +442,6 @@ li a {
   cursor: pointer;
   background-color: #1d2b72;
   color: rgb(73, 226, 135, 1);
-  border-bottom: 5px solid rgb(73, 226, 135, 1);
-  border-left: 5px solid rgb(73, 226, 135, 1);
-  border-top: 5px solid rgb(73, 226, 135, 1);
-  border-right: 3px solid rgb(73, 226, 135, 1);
   transition: all .2s ease-in-out;
 }
 .depo_btn:active {
@@ -487,7 +482,7 @@ li a {
   cursor: pointer;
   color: rgb(255, 208, 57, 1);
   background-color: #1d2b72;
-  border: 4px solid rgb(255, 208, 57, 1);
+  border: 4px solid #1d2b72;
   transition: all .2s ease-in-out;
 
 }
@@ -594,6 +589,7 @@ li a {
   color: #1d2b72;
   background-color: rgb(73, 226, 135, 1);
   justify-self: center;
+  border: 3px solid #1d2b72;
 }
 
 .green-blue_btn:hover {
