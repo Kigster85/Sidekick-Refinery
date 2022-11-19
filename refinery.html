@@ -136,7 +136,7 @@
       <a class="top"href="#top"><button id="myBtn" title="Go to top">Top</button></a>
       <!--To Top Button End-->
       <!-- Top of page Stats start-->
-      <div class="stat">
+      <div class="stat" id="stats">
         <h3>Available</h3>
       </div>
       <div class="stat">
@@ -206,15 +206,19 @@
       <!--Wingman section start-->
       <section class="container">
         <div class="wingman_section">
-          <h2 class="wingman_section-h2">GET A WINGMAN</h2>
           <div class="wingman_section-lookup">
+            <h2 class="wingman_section-h2">GET A WINGMAN</h2>
             <h3>Wingman Lookup</h3>
+            
             <input
               class="wingman_input user_input"
               type="text"
               placeholder="Wingman Address"
             />
+            <button class="green-blue_btn wingman_section-updateBtn" title="Update">Update</button>
+            <button class="green-blue_btn wingman_section-supportBtn" title="Support Marketing">Support Marketing</button>
           </div>
+
           <div class="wingman_section-stats">
             <p>Current Wingman:</p>
             <p class="currentWingman">0x0000000000000000000000000000000000000000</p>
@@ -223,9 +227,6 @@
             <p>Inactivity Threshold:</p>
             <p>0</p>
           </div>
-          <button class="green-blue_btn wingman_section-updateBtn" title="Update">Update</button>
-          <button class="green-blue_btn wingman_section-supportBtn" title="Support Marketing">Support Marketing</button>
-        </div>
       </section>
       <!--Wingman section end-->
 
@@ -761,15 +762,17 @@
     ​<script>
       //Get the button
       var mybutton = document.getElementById("myBtn");
-      
+      var rdbbtnContainer = document.getElementById("stats");
       // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function() {scrollFunction()};
       
       function scrollFunction() {
         if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
+          mybutton.style.display = "block"
+          document.getElementsByClassName("stat").style.font = "30px";
         } else {
-          mybutton.style.display = "none";
+          mybutton.style.display = "none"
+          document.getElementsByClassName("stat").style.font = "60px";
         }
       }
       
