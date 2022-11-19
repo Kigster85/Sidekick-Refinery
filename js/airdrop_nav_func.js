@@ -7,7 +7,7 @@ function airdrop_Tab(button_Name)
       airdrop[i].style.display = "none";
     }
     document.getElementById(button_Name).style.display = "block";
-
+    document.getElementById(button_Name).style.transition = "ease-in-out all 2s";
     console.log(button_Name)
 
 
@@ -43,7 +43,8 @@ function ReqBD_Tab(Reqbutton_Name)
         for (let i = 0; i < ReqBD_Tab.length; i++) {
           ReqBD_Tab[i].style.display = "none";
     }
-    document.getElementById(Reqbutton_Name).style.display = "block";
+    document.getElementById(Reqbutton_Name).style.display = "block ";
+    document.getElementById(Reqbutton_Name).style.transition = "ease-in-out all 2s";
 
     console.log(Reqbutton_Name)
 
