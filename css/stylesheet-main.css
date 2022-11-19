@@ -604,7 +604,7 @@ li a {
 .wingman_section-updateBtn {
   margin-top: 50px;
   justify-self: end;
-  height: 30%;
+  height: 50%;
   width: 65%;
   font-size: 25px;
   grid-row: 4;
@@ -614,7 +614,7 @@ li a {
 .wingman_section-supportBtn {
   margin-top: 50px;
   justify-self: start;
-  height: 30%;
+  height: 50%;
   width: 65%;
   font-size: 25px;
   grid-row: 4;
