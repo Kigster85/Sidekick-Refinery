@@ -288,7 +288,7 @@ li a {
 .main_page {
   display: grid;
   position: absolute;
-  padding-top: 250px;
+  padding-top: 300px;
   width: 100%;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, auto);
