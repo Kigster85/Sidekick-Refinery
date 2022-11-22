@@ -58,7 +58,6 @@ p {
 }
 /* to top button*/
 #myBtn {
-  display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
@@ -72,8 +71,11 @@ p {
   margin: 10px;
   font-size: 15px;
   font-weight: bold;
-  color: #1d2b72;
+  color: #03082D;;
   background-color: rgb(73, 226, 135, 1);
+  transition: all 1s ease-in-out;
+  opacity: 0;
+
 }
 
 #myBtn:hover {
@@ -97,7 +99,6 @@ p {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  transition: 1s; /* 0.5 second transition effect to slide in the sidebar */
   transition-timing-function: ease-in-out;
   animation: fadeIn ease 1s;
   z-index: 11;
@@ -618,9 +619,8 @@ li a {
 
 /*Checkout Refiners section start*/
 .checkoutRefiners_section {
-  grid-row: 2;
-  grid-column: 1;
   display: grid;
+  grid-template-rows: repeat(2, auto);
   justify-content: space-evenly;
   border-radius: 0.75rem;
   text-align: center;
@@ -660,22 +660,23 @@ li a {
 
 .checkoutRefiners_section-playerInfo {
   grid-row: 3;
-  grid-column: 1/3;
-  justify-self: center;
+  margin: 7%;
+}
+.checkoutRefs-table_div {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  justify-items: center;
+  text-align: inherit;
+}
+.checkoutRefs tr:hover {
+  text-align: inherit;
+  background-color: white;
+  color: #000c1f;
 }
 
-.checkoutRefiners_section-playerInfo h3 {
-  grid-row: 1;
-  grid-column: 1/3;
-  margin-bottom: 10px;
-}
-
-.checkoutRefiners_section-playerInfo p {
-  border: 2px solid #1d2b72;
-  padding-top: 10%;
-  padding-bottom: 10%;
+.checkoutRefs_table {
+  justify-self: center;
 }
 /*Checkout Refiners section end*/
 
@@ -910,7 +911,7 @@ li a {
   text-align: center;
   width: 100%;
   margin-left:8%;
- }
+}
 .table{
   width:100%;
   border-color: #000c1f;
