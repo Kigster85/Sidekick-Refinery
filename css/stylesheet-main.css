@@ -337,13 +337,37 @@ li a {
   border-radius: 0.75rem;
 }
 .stat {
-  height: 110px;
-  width: 80%;
+  height: 120px;
+  width: 60%;
   text-align: center;
-  color: rgb(3, 8, 45);
   background-color: #ffffff;
   padding-top: 10px;
   border-radius: 0.75rem;
+  transition: all 1s ease-in-out;
+}
+.shrink {
+  height: 40px;
+  width: 60%;
+  text-align: center;
+  background-color: #ffffff;
+  padding-top: 10px;
+  border-radius: 0.75rem;
+  transition: all 1s ease-in-out;
+  font-display: none;
+
+}
+
+.visible{
+  transition:visibility 2s, opacity 2s;
+  visibility:visible;
+  opacity:1;
+
+}
+.invisible{
+  transition:visibility 2s, opacity 2s;
+  visibility:hidden;
+  opacity:0;
+
 }
 .contract_addresses-container {
   text-align: center;
