@@ -1,13 +1,12 @@
 function airdrop_Tab(button_Name) 
 {
     console.log("Testing 123!")
-   
     const airdrop = document.getElementsByClassName("airdrop_sections");
         for (let i = 0; i < airdrop.length; i++) {
       airdrop[i].style.display = "none";
     }
     document.getElementById(button_Name).style.display = "block";
-    document.getElementById(button_Name).style.transition = "ease-in-out all 2s";
+    document.getElementById(button_Name).style.transition = "all 2s ease-in-out";
     console.log(button_Name)
 
 
@@ -38,13 +37,12 @@ for (var i = 0; i < btns.length; i++) {
 function ReqBD_Tab(Reqbutton_Name)  
 {
     console.log("Testing 123!")
-   
     const ReqBD_Tab = document.getElementsByClassName("reqbd_sections");
         for (let i = 0; i < ReqBD_Tab.length; i++) {
           ReqBD_Tab[i].style.display = "none";
     }
     document.getElementById(Reqbutton_Name).style.display = "block ";
-    document.getElementById(Reqbutton_Name).style.transition = "ease-in-out all 2s";
+    document.getElementById(Reqbutton_Name).style.transition = "all 2s ease-in-out";
 
     console.log(Reqbutton_Name)
 
@@ -76,16 +74,12 @@ for (var r = 0; r < rbdbtns.length; r++) {
 
 
 
-   
- }
- $(document).ready(function(){
-  document.getElementById("defaultOpen").click();  
 
-});
+}
 $(document).ready(function(){
+  document.getElementById("defaultOpen").click();  
   document.getElementById("ReqBDdefault").click();
   document.getElementById("ReqBDdefault").click();
-
-  
 
 });
+
