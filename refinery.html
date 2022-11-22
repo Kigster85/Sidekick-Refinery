@@ -315,7 +315,7 @@
             </select>
             <!--Dropdown list settings End-->
 
-            <span class="astrix_info">* Eligible matching players selected at random.</span>
+            <span>* Eligible matching players selected at random.</span>
             </div>
             <div class="teamAirdrop-optionComponents">
             <h3>Minimum directs</h3>
@@ -368,16 +368,23 @@
             </select>
             <!--Dropdown list settings End-->
             </div>
+            <div class="teamAirdrop-budgetComponent">
             <h3>Budget</h3>
-            <input type="text" name="FUEL" placeholder="Fuel">
-            <span>Available: N/A HFuel</span>
-            <span>Number of recipients:</span>
-            <span>Estimated Fuel per person: N/A</span>
-            <button class="air_drop_btn" title="Run">Run</button>
-            <button class="air_drop_btn" title="Send">Send</button>
+            <input type="text" name="FUEL" placeholder="Fuel" class="budgetInput user_input">
+            <p >Available: N/A HFuel</p>
+            <p>Number of recipients:</p>
+            <p>Estimated Fuel per person: N/A</p>
+            <button class="air_drop_btn blue-yellow_btn budget-runBtn" title="Run">Run</button>
+            <button class="air_drop_btn blue-yellow_btn budget-sendBtn" title="Send">Send</button>
+            </div>
+
             <hr>
+            <div class="campaign-section">
+              <div class="campaign-console">
             <h3>Campaign Console</h3>
             <textarea></textarea>
+              </div>
+              <div class="campaign-viewer">
             <h3>Campaign Viewer</h3>
             <h4>ID</h4>
             <h4>Address</h4>
@@ -385,6 +392,8 @@
             <h4>Team Depth</h4>
             <h4>Deposits</h4>
             <input type="checkbox">
+            </div>
+            </div>
             <hr>
             <span>No Data</span>
           </section>

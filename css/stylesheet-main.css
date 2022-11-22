@@ -9,7 +9,6 @@
 }
 html {
   scroll-behavior: smooth;
-
 }
 header,
 article,
@@ -72,17 +71,16 @@ p {
   margin: 10px;
   font-size: 15px;
   font-weight: bold;
-  color: #03082D;;
+  color: #03082d;
   background-color: rgb(73, 226, 135, 1);
   transition: all 1s ease-in-out;
   opacity: 0;
-
 }
 
 #myBtn:hover {
   background-color: #1d2b72;
   color: rgb(73, 226, 135, 1);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .top {
   padding: 0px;
@@ -106,7 +104,7 @@ p {
   z-index: 11;
   top: 0;
   left: -320px;
-  transition: all .5s cubic-bezier(.685,.0473,.346,1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
 }
 /* The side navigaion links */
 .sidenavbtn {
@@ -119,8 +117,7 @@ p {
   transition-timing-function: ease-in-out;
   scroll-behavior: smooth;
   width: 100%;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 /* When you mouse over the navigation links, change their color */
 .sidenavbtn:hover {
@@ -129,9 +126,7 @@ p {
   border-top: 2px solid #ffd039;
   border-bottom: 2px solid #ffd039;
   cursor: pointer;
-  transition: all .2s ease-in-out;
-
-  
+  transition: all 0.2s ease-in-out;
 }
 /* The sidebar links */
 .sidenav a {
@@ -155,8 +150,7 @@ p {
   color: #ffffff;
   cursor: pointer;
   background-color: rgba(7, 9, 25, 0.15);
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 .sidebar_header {
   padding-top: 0;
@@ -196,15 +190,13 @@ li a {
   background-color: #1d2b72;
   border: none;
   margin-top: 2vh;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .openbtn:hover {
   cursor: pointer;
   color: rgb(73, 226, 135, 1);
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 /* button to close the sidebar */
@@ -215,14 +207,12 @@ li a {
   float: right;
   padding: 10px;
   font-size: 18px;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 .close_btn:hover {
   scale: 1.3;
   cursor: pointer;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 .close_btn:active {
   color: rgb(73, 226, 135, 1);
@@ -233,7 +223,7 @@ li a {
   border-style: none;
   background-color: rgb(255, 208, 57, 1);
   font-size: 15px;
-  color: #03082D;
+  color: #03082d;
   border: solid 2px rgb(255, 208, 57, 1);
   border-radius: 0.75rem;
   padding: 5px 10px 5px 10px;
@@ -243,15 +233,14 @@ li a {
   margin-top: 3vh;
   word-wrap: break-word;
   content: "";
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 .connect_btn:hover {
   background-color: rgb(29, 43, 114, 0.5);
   color: rgb(255, 208, 57, 1);
   border: solid 2px rgb(255, 208, 57, 1);
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .connect_btn:active {
   background-color: rgb(29, 43, 114, 0.5);
@@ -308,7 +297,7 @@ li a {
   background-color: rgba(255, 255, 255, 1);
   padding: 30px;
   justify-content: space-evenly;
-  margin: 15px 30px 15px 45px;
+  margin: 30px 35px 30px 45px;
   border-radius: 0.75rem;
 }
 
@@ -353,9 +342,8 @@ li a {
   background-color: #ffffff;
   padding-top: 10px;
   border-radius: 0.75rem;
-  transition: all .5s cubic-bezier(.685,.0473,.346,1);
-  cursor:pointer; 
-
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  cursor: pointer;
 }
 .shrink {
   height: 40px;
@@ -363,21 +351,21 @@ li a {
   background-color: #ffffff;
   padding-top: 10px;
   border-radius: 0.75rem;
-  transition: all .5s cubic-bezier(.685,.0473,.346,1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   white-space: nowrap;
 }
 
-.visible{
-  transition: all .5s cubic-bezier(.685,.0473,.346,1);  visibility:visible;
-  opacity:1;
+.visible {
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  visibility: visible;
+  opacity: 1;
   white-space: nowrap;
-
 }
-.invisible{
-  transition: all .5s cubic-bezier(.685,.0473,.346,1);  visibility:hidden;
-  opacity:0;
+.invisible {
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  visibility: hidden;
+  opacity: 0;
   white-space: nowrap;
-
 }
 .contract_addresses-container {
   text-align: center;
@@ -467,18 +455,17 @@ li a {
   background-color: rgb(73, 226, 135, 1);
   font-weight: bold;
   font-size: 17px;
-  color: #03082D;
+  color: #03082d;
   justify-self: center;
   z-index: 2;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .depo_btn:hover {
   cursor: pointer;
   background-color: #1d2b72;
   color: rgb(73, 226, 135, 1);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .depo_btn:active {
   scale: 0.95;
@@ -508,12 +495,11 @@ li a {
   margin: 10px;
   font-size: 15px;
   font-weight: bold;
-  color: #03082D;
+  color: #03082d;
   background-color: rgb(255, 208, 57, 1);
   justify-self: center;
   border: 4px solid #1d2b72;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .blue-yellow_btn:hover {
@@ -521,8 +507,7 @@ li a {
   color: #ffd039;
   background-color: #1d2b72;
   border: 4px solid #1d2b72;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 .blue-yellow_btn:active {
   opacity: 0.8;
@@ -536,8 +521,7 @@ li a {
   height: 60%;
   width: 90%;
   font-size: 25px;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .refuel_btn {
@@ -547,8 +531,7 @@ li a {
   height: 60%;
   width: 90%;
   font-size: 25px;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .claim_btn {
@@ -559,8 +542,7 @@ li a {
   height: 60%;
   width: 90%;
   font-size: 25px;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 /* deposit section end */
@@ -587,7 +569,6 @@ li a {
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, auto);
   display: grid;
-
 }
 .wingman_input {
   width: 100%;
@@ -621,19 +602,18 @@ li a {
   margin: 10px;
   font-size: 15px;
   font-weight: bold;
-  color: #03082D;
+  color: #03082d;
   background-color: rgb(73, 226, 135, 1);
   justify-self: center;
   border: 3px solid #1d2b72;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .green-blue_btn:hover {
   cursor: pointer;
   background-color: #1d2b72;
   color: rgb(73, 226, 135, 1);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .green-blue_btn:active {
@@ -648,8 +628,7 @@ li a {
   font-size: 25px;
   grid-row: 4;
   grid-column: 1;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .wingman_section-supportBtn {
@@ -660,8 +639,7 @@ li a {
   font-size: 25px;
   grid-row: 4;
   grid-column: 2;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 /* wingman section end*/
@@ -754,8 +732,7 @@ li a {
   z-index: 1;
   background-color: white;
   position: relative;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .airdrop_h2 {
@@ -814,15 +791,14 @@ li a {
   justify-self: center;
   opacity: 1;
   border-right: #000c1f 2px solid;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .active,
 .air_drop_tab_btn:hover {
   opacity: 1;
   background-color: rgb(73, 226, 135, 1);
-  color: #03082D;;
+  color: #03082d;
   border-radius: 0.75rem;
   border-style: none;
   margin: -3px -2px -3px -5px;
@@ -833,7 +809,7 @@ li a {
   border-top: #000c1f 2px solid;
   border-right: #000c1f 2px solid;
   scale: 100% 100%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 .adTabNavBtns {
@@ -850,8 +826,7 @@ li a {
   grid-column: 1/3;
   height: 20%;
   margin-bottom: 3%;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .dropdown_lists {
@@ -865,7 +840,78 @@ li a {
   width: 100%;
   border: 3px solid rgb(29, 43, 114, 0.5);
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 5px;
+}
+
+.teamAirdrop-budgetComponent {
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 4;
+}
+.budgetInput {
+  grid-column: 1/5;
+  grid-row: 2;
+  width: 99%;
+  margin-top: 1%;
+}
+
+.budget-runBtn {
+  grid-row: 4;
+  grid-column: 2;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  align-self: center;
+  width: 25%;
+  height: 75%;
+}
+.budget-sendBtn {
+  grid-row: 4;
+  grid-column: 3;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  align-self: center;
+  justify-self: start;
+  width: 25%;
+  height: 75%;
+}
+.teamAirdrop-budgetComponent p {
+  grid-row: 3;
+  justify-self: end;
+  margin-top: 3%;
+}
+
+.campaign-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.campaign-console {
+  grid-column: 1;
+  grid-row: 1;
+}
+.campaign-console textarea {
+  height: 350px;
+  width: 99%;
+  margin-top: 1%;
+}
+.campaign-viewer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 6fr;
+}
+.campaign-viewer h3 {
+  grid-column: 1/3;
+}
+.campaign-viewer h4 {
+  grid-row: 2;
+  justify-self: end;
+}
+.campaign-viewer input {
+  grid-row: 2;
+  grid-column: 7;
+  height: 20px;
+  width: 20px;
 }
 
 /*scroll bar CSS start*/
@@ -898,15 +944,14 @@ li a {
   justify-self: center;
   opacity: 1;
   border-right: #000c1f 2px solid;
-  transition: all .2s ease-in-out;
-
+  transition: all 0.2s ease-in-out;
 }
 
 .rbdactive,
 .ReqBD_tab_btn:hover {
   opacity: 1;
   background-color: #49e287;
-  color: #03082D;;
+  color: #03082d;
   border-radius: 0.75rem;
   border-style: none;
   margin: -3px -2px -3px -5px;
@@ -917,7 +962,7 @@ li a {
   border-top: #000c1f 2px solid;
   border-right: #000c1f 2px solid;
   scale: 100% 100%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 .rbdTabNavBtns {
@@ -936,32 +981,36 @@ li a {
   z-index: 1;
   background-color: white;
   position: relative;
-  transition: all .6s ease-in-out;
-
+  transition: all 0.6s ease-in-out;
 }
-.Require_BD_section{
+.Require_BD_section {
   padding: 0px 25px 0px 45px;
   display: grid;
   grid-column: 1/3;
   grid-template-columns: repeat(2, 100%);
   grid-template-rows: repeat(2, auto);
 }
-.rbdh1{
-color:white;
+.rbdh1 {
+  color: white;
 }
-.table{
-  width:100%;
+.table {
+  width: 100%;
   border-color: #000c1f;
   border-style: solid;
   border-width: 3px;
   border-collapse: collapse;
 }
-.table th{
-  text-align:inherit;
+.table th {
+  text-align: inherit;
   background-color: #1d2b72;
-  color:white;
+  color: white;
 }
-tbody, td, tfoot, th, thead, tr {
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
   border-color: #000c1f;
   border-style: solid;
   border-width: 2px;
@@ -971,5 +1020,5 @@ tbody, td, tfoot, th, thead, tr {
 }
 tr:hover {
   background-color: #1d2b72;
-  color:white;
+  color: white;
 }
