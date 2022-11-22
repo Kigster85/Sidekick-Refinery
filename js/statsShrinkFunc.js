@@ -7,7 +7,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
     document.getElementById("myBtn").style.opacity = '1'
     document.getElementById("myBtn").style.pointerEvents = 'all'
-    statContainer.style = "height: 5%;   transition: all .5s cubic-bezier(.685,.0473,.346,1);";
+    statContainer.style = "height: 5%; transition: all .5s cubic-bezier(.685,.0473,.346,1);";
     console.log (statContainer)
     console.log (stat)
     console.log (statsText)
@@ -22,7 +22,7 @@ function scrollFunction() {
   else {
     document.getElementById("myBtn").style.opacity = '0'
     document.getElementById("myBtn").style.pointerEvents = 'none'
-    statContainer.style = "height: 15%;   transition: all .5s cubic-bezier(.685,.0473,.346,1);";
+    statContainer.style = "height: 15%; transition: all .5s cubic-bezier(.685,.0473,.346,1);";
     for (var i = 0; i < stat.length; i++){
       stat[i].classList.remove('shrink');
     }
