@@ -280,9 +280,10 @@
 
           <section id="airdrop1" class="airdrop_sections">
             <h2 class="airdrop_h2">Player</h2>
-            <input class="player-address_input user_input " type="text" name="Player Address" placeholder="Player Address">
-            </br>
             <div class="RHS_btns">
+            <input class="teamViewer-input player-address_input user_input " type="text" name="Player Address" placeholder="Player Address">
+            </br>
+            
             <button class="air_drop_btn blue-yellow_btn teamViewer-useMyAddress_btn" title="Use My Address">Use My Address</button>
             <button class="air_drop_btn blue-yellow_btn viewAll_btn" title="View All">View All</button>
             <button class="air_drop_btn blue-yellow_btn show-btn" title="Show">Show</button>
@@ -381,18 +382,18 @@
             <hr>
             <div class="campaign-section">
               <div class="campaign-console">
-            <h3>Campaign Console</h3>
-            <textarea></textarea>
+                <h3>Campaign Console</h3>
+                <textarea></textarea>
               </div>
               <div class="campaign-viewer">
-            <h3>Campaign Viewer</h3>
-            <h4>ID</h4>
-            <h4>Address</h4>
-            <h4>Directs</h4>
-            <h4>Team Depth</h4>
-            <h4>Deposits</h4>
-            <input type="checkbox">
-            </div>
+                <h3>Campaign Viewer</h3>
+                <h4>ID</h4>
+                <h4>Address</h4>
+                <h4>Directs</h4>
+                <h4>Team Depth</h4>
+                <h4>Deposits</h4>
+                <input type="checkbox">
+              </div>
             </div>
             <hr>
             <span>No Data</span>
@@ -401,13 +402,17 @@
         
         <!--Direct Airdrop Content Section Start-->           
           <section id="airdrop3" class="airdrop_sections direct_airdrop">
-            <h2>Direct Airdrop</h2>
-            <h3>Player</h3>
-            <input type="text" name="Player Address" placeholder="Player Address">
+            <h2 class="airdrop_h2">Direct Airdrop</h2>
+            <div class="directAirdrop-section">
+            <div class="directAirdrop_inputSection">
+              <h3>Player</h3>
+              <input type="text" name="Player Address" placeholder="Player Address" class="user_input">
+            </div>
             <h3>Amount</h3>
             <h3>Available: N/A HFuel</h3>
-            <input type="number" min="0" name="Amount to Send" placeholder="Amount to Send">
-            <button class="air_drop_btn" title="Send">Send</button>
+            <input class="user_input amountToSend-input" type="number" min="0" name="Amount to Send" placeholder="Amount to Send">
+            <button class="depo_btn directAirdrop-sendBtn" title="Send">Send</button>
+            </div>
           </section>
         <!--Direct Airdrop Content Section End-->         
           </div>
